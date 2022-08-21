@@ -1,1 +1,1 @@
-# html trong folder views
+# html trong folder views, coi cach lam handlesbar
