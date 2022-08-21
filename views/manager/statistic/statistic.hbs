@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="/css/chart.css">
+<link rel="stylesheet" href="/css/stacked_bar_chart.css">
+<link rel="stylesheet" href="/css/manager/statistic/statistic.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+
+{{> navbar text='Tìm kiếm nhu yếu phẩm ... '}}
+
+<div class="mb-6"></div>
+
+<div class="container-fluid">
+  <div class="row">
+    {{> sidebar where='statistic'}}
+    <main role="main" id="content" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <div class="row justify-content-md-center mt-2">
+        <div id="amount" class="type col-md-2 btn border mx-1">Trạng thái</div>   
+        <div id="consum-pack" class="type col-md-2 btn border mx-1">Tiêu thụ gói NYP </div>  
+        <div id="consum-pro" class="type col-md-2 btn border mx-1">Tiêu thụ NYP</div>  
+        <div id="loan-payment" class="type col-md-2 btn border mx-1">Dư nợ, thanh toán</div>     
+      </div>
+      <h4 id="statistic-title" class="mt-2"></h4>
+      <div id="chart" class="mx-auto chart-container">
+
+      </div>
+      <div id="statistic-table" class="mt-3">      
+        <table class="table table-striped bg-white">
+            <thead id="thead" class="bg-success text-light">
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+      </div>
+      <div class="row justify-content-md-center">
+        <div id="export" class="btn btn-success col-md-3 mt-3">Xuất file</div>
+      </div>
+    </main>
+
+  </div>
+</div>
+{{> modal}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="/js/vendors/jquery.min.js"></script>
+<script type="text/javascript" src="/js/manager/statistic.js"></script>

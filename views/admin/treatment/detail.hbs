@@ -1,0 +1,52 @@
+
+<div class="card mx-auto align-middle">
+    <div class="card-body" id="form-card">
+        <h2>Chi tiết, cập nhật điểm điều trị/cách ly</h2>
+        {{#if msg}}
+            <div class="alert {{#if status}} alert-success {{else}} alert-danger {{/if}} mx-auto">{{msg}}</div>
+        {{/if}}
+        {{#if treatment}}
+          <form id="form" class="row" action="/admin/treatment/detail?id={{treatment.MaNoiDTCL}}" method="POST">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="name">Tên điểm điều trị/cách ly</label>
+                <input id="name" type="text" class="form-control border" value="{{treatment.TenNoiDTCL}}" name="name" placeholder="Tên điểm điều trị/cách ly">
+              </div>
+              <div class="form-group">
+                <label for="size">Sức chứa</label>
+                <input id="size" type="number" class="form-control border" value="{{treatment.SucChua}}" name="size" placeholder="Sức chứa tối đa">
+              </div>
+              <div class="form-group">
+                <label for="current">Số lượng hiện tại</label>
+                <input id="current" type="number" class="form-control border" value="{{treatment.SoLuongHienTai}}" name="current" placeholder="Số lượng hiện tại">
+              </div>
+            </div>  
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="id">Loại cơ sở</label>
+                <select class="px-2 py-2 w-100 border" name="type" id="type">
+                  {{#if treatment.Loai}}
+                    <option value="0">Điểm cách ly</option>
+                    <option value="1" selected>Điểm điều trị</option>
+                  {{else}} 
+                    <option value="0" selected>Điểm cách ly</option>
+                    <option value="1">Điểm điều trị</option>
+                  {{/if}}
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="address">Địa chỉ</label>
+                <input id="address" type="text" class="form-control border" value="{{treatment.DiaChi}}" name="address" placeholder="Địa chỉ cụ thể">
+              </div>
+              <div class="form-group">
+                <label for="id">Mã nơi điều trị/cách ly</label>
+                <input id="id" type="number" class="form-control border" value="{{treatment.MaNoiDTCL}}" name="id" readonly placeholder="Mã nơi điều trị cách ly">
+              </div>
+            </div>
+            <div class="col-md-8"></div>
+            <button id="submit" type="submit" class="btn btn-primary col-md-3">Cập nhật</button>           
+          </form>
+        {{/if}}
+    </div>
+</div>
+  

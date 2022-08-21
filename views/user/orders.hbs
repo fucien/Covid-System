@@ -1,0 +1,29 @@
+<div id="body" class="rounded">
+    <div id="title" class="rounded">
+        <div>Lịch sửa mua hàng</div>
+    </div>
+    <div class="rounded">
+        <table class="table">
+            <thead >
+                <tr class="row w-100">
+                    <th class ="col-md-1"scope="col">Mã MH</th>
+                    <th class="left col-md-2" scope="col">Thời gian</th>
+                    <th class="left col-md-5" scope="col">Tên gói nhu yếu phẩm</th>
+                    <th class="left col-md-2" scope="col">Số tiền</th>
+                    <th class="left col-md-2" scope="col">Xem chi tiết</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each orders}}
+                    <tr class="row w-100">
+                        <td class="right col-md-1">{{this.MaLichSuMua}}</td>
+                        <td class="right col-md-2">{{this.ThoiGian}}</td>
+                        <td class="right col-md-5">{{this.TenGoiNYP}}</td>
+                        <td class="right col-md-2">{{this.SoTien}} đồng</td>
+                        <td  class="col-md-2 btn-detail"><a href="/order/detail?id={{this.MaLichSuMua}}">Xem chi tiết</a></td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>

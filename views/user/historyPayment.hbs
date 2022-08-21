@@ -1,0 +1,41 @@
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-3 ">
+            {{> user_sidebar where ='historyPayment'}}
+        </div>
+        <div class="col-md-9">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>Lịch sử thanh toán</h4>
+                            <hr>
+                        </div>
+                        <div class="col-md-8 text-right">
+                            <h4>Số dư nợ hiện tại:<span>{{formatCurrency balance}} VNĐ</span> </h4>
+                            <hr>
+                        </div>
+                    </div>
+                    <table class="table">
+                        <thead class="thead">
+                            <tr>
+                                <th scope="col">Thời gian</th>
+                                <th scope="col">Số tiền thanh toán</th>
+                                <th scope="col">Số dư nợ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#payment}}
+                            <tr>
+                                <td>{{formatTime ThoiGian}}</td>
+                                <td>{{formatCurrency SoTien}} VNĐ</td>
+                                <td>{{formatCurrency SoDuNo}} VNĐ</td>
+                            </tr>
+                            {{/payment}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

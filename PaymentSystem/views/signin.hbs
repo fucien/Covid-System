@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="card">
+        <form class="form-signin" method="post" action="./signin">
+            <h4 class="text-center text-primary">
+                Tài khoản thanh toán
+            </h4>
+            <h2 class="text-center font-weight-bold text-primary">Đăng nhập</h2>
+            <label for="username">
+                Tài khoản
+            </label>
+            <input id="username" name="username" class="form-control" placeholder="Username" required=""
+                autofocus="" />
+            <div class="mb-3"></div>
+            <label for="inputPassword">
+                Mật khẩu
+            </label>
+            <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password"
+                required="" />
+            <div class="mb-3"></div>
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me" name="keep" />
+                    Lưu mật khẩu
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">
+                Đăng nhập
+            </button>
+            {{#if msg}}
+            <h6 class="text-danger font-weight-bold text-center mt-2">
+                {{msg}}
+            </h6>
+            {{/if}}
+        </form>
+    </div>
+</div>

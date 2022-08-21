@@ -1,0 +1,164 @@
+{{> navbar text='Tìm kiếm nhu yếu phẩm ... '}}
+
+<div class="mb-6"></div>
+<div class="container-fluid">
+    <div class="row">
+        {{> sidebar where='package'}}
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <div class="line-1">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <button id="btn-back" class="btn btn-primary">Quay lại</button>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <button type="button" class="btn btn-primary btn-update mr-1" data-toggle="modal"
+                            data-target="#modal-update">Cập nhật</button>
+                        <button type="button" class="btn btn-primary btn-delete" data-toggle="modal"
+                            data-target="#modal-delete">Xoá</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+
+                <div>
+                    <h2>Chi tiết gói nhu yếu phẩm</h2>
+                    <div class="mb-3"></div>
+                    <div class="card">
+                        <div class="card-body">
+                            <table id="table-1" class="table">
+                                <tbody>
+                                    <tr>
+                                        <th style="border-top: none;" scope="row">Mã gói nhu yếu phẩm :</th>
+                                        <td style="border-top: none;"> {{package.package.MaGoiNYP}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Tên gói nhu yếu phẩm :</th>
+                                        <td>{{package.package.TenGoiNYP}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Ngày tạo :</th>
+                                        <td>{{package.package.NgayLapGoi}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Mức giới hạn :</th>
+                                        <td>{{package.package.MucGioiHan}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Thời gian giới hạn :</th>
+                                        <td>{{package.package.ThoiGianGioiHan}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="mb-4"></div>
+                </div>
+
+                <div>
+                    <h2>Danh sách nhu yếu phẩm của gói</h2>
+                    <div class="mb-3"></div>
+                    <div class="card">
+                        <div class="card-body">
+                            <table id="table-2" class="table">
+                                <thead>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th style="border-top: none;">STT</th>
+                                        <th style="border-top: none;">Tên nhu yếu phẩm</th>
+                                        <th style="border-top: none;">Số lượng tối thiểu</th>
+                                        <th style="border-top: none;">Số lượng</th>
+                                        <th style="border-top: none;">Số lượng tối đa</th>
+                                        <th style="border-top: none;">Chi tiết</th>
+                                    </tr>
+                                    {{#each package.details }}
+                                        <tr>
+                                        <td class="item-id">{{MaNYP}}</td>
+                                        <td>{{TenNYP}}</td>
+                                        <td>{{SoLuongToiThieu}}</td>
+                                        <td>{{SoLuong}}</td>
+                                        <td>{{SoLuongToiDa}}</td>
+                                        <td class="text-center">
+                                            <button type="button" class="btn btn-info btn-detail-product">
+                                                <a style="text-decoration: none;color:white" href="/manager/product/detail?id={{MaNYP}}">Chi tiết</a>
+                                            
+                                            </button>
+                                        </td class="text-center">
+                                    </tr>
+                                    {{/each}}
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="mb-4"></div>
+                </div>
+
+                {{!-- <div>
+                    <h2>Lịch sử mua gói</h2>
+                    <div class="mb-3"></div>
+                    <div class="card">
+                        <div class="card-body">
+                            <table id="table-2" class="table">
+                                <thead>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th style="border-top: none;">Mã lịch sử mua</th>
+                                        <th style="border-top: none;">Người mua</th>
+                                        <th style="border-top: none;">Số tiền</th>
+                                        <th style="border-top: none;">Thời gian</th>
+                                        <th style="border-top: none;">Số lượng</th>
+                                        <th style="border-top: none;">Chi tiết người mua</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="item-id">1234</td>
+                                        <td>1234</td>
+                                        <td>Trà Anh Tòn</td>
+                                        <td>1000USD</td>
+                                        <td>24-10-1917</td>
+                                        <td>2</td>
+                                        <td class="text-center">
+                                            <button type="button" class="btn btn-info btn-detail-user">Chi tiết</button>
+                                        </td class="text-center">
+                                    </tr>
+                                    <tr>
+                                        <td class="item-id">1234</td>
+                                        <td>1234</td>
+                                        <td>Trà Anh Tòn</td>
+                                        <td>1000USD</td>
+                                        <td>24-10-1917</td>
+                                        <td>2</td>
+                                        <td class="text-center">
+                                            <button type="button" class="btn btn-info btn-detail-user">Chi tiết</button>
+                                        </td class="text-center">
+                                    </tr>
+                                    <tr>
+                                        <td class="item-id">1234</td>
+                                        <td>1234</td>
+                                        <td>Trà Anh Tòn</td>
+                                        <td>1000USD</td>
+                                        <td>24-10-1917</td>
+                                        <td>2</td>
+                                        <td class="text-center">
+                                            <button type="button" class="btn btn-info btn-detail-user">Chi tiết</button>
+                                        </td class="text-center">
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div> --}}
+
+            </div>
+        </main>
+    </div>
+</div>
+{{> package/updateModal}}
+{{> package/deleteModal}}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>

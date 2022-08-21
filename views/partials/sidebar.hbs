@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="/css/sidebar.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<nav id="sidebar" style="height: 100vh;" class="col-md-2 d-none d-md-block sidebar">
+    <div class="sidebar-sticky w-100">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a {{#ifStr where 'user' }} class="nav-link active font-weight-bold " {{else}} class="nav-link"
+                    {{/ifStr}} href="/manager/user/list">
+                     <span class="fa fa-user mr-2"></span>Người liên quan
+                </a>
+            </li>
+            <li class="nav-item">
+                <a {{#ifStr where 'product' }} class="nav-link active font-weight-bold " {{else}} class="nav-link"
+                    {{/ifStr}} href="/manager/product/list">
+                    <span class="fa fa-leaf mr-2"></span>Nhu yếu phẩm
+                </a>
+            </li>
+            <li class="nav-item">
+                <a {{#ifStr where 'package' }} class="nav-link active font-weight-bold " {{else}} class="nav-link"
+                    {{/ifStr}} href="/manager/package/list">
+                    <span class="fas fa-boxes mr-2"></span>Gói nhu yếu phẩm
+                </a>
+            </li>
+            <li class="nav-item">
+                <a {{#ifStr where 'statistic' }} class=" nav-link active font-weight-bold " {{else}} class=" nav-link"
+                    {{/ifStr}} href="/manager/statistic">
+                    <span class="fas fa-chart-line mr-2"></span>Thống kê
+                </a>
+            </li>
+            <li class="nav-item">
+                <a {{#ifStr where 'payment' }} class="nav-link active font-weight-bold " {{else}} class="nav-link"
+                    {{/ifStr}} href="/manager/payment/list">
+                    <span class="fas fa-money-bill-alt mr-2"></span>Thanh toán, dư nợ
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<style>
+    .nav-item a {
+        color: white;
+    }
+</style>
