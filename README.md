@@ -1,2 +1,1 @@
-# Covid-web
- 
+# html trong folder views
