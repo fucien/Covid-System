@@ -7,17 +7,18 @@
 }
 
 #title {
-    background-color: #0724B2;
+    background-color: #f08484;
     color: white;
     width: 350px;
     height: 37px;
     font-size: 20px;
     padding-top: 3px;
     text-align: center;
-    border-color: #0724B2;
+    border-color: #f08484;
 }
+
 /* thead {
-    background-color: #0724B2;
+    background-color: #f08484;
     color: white;
     font-size: 16px;
     border-top: 0px;
@@ -34,9 +35,10 @@ tr {
 tr {
     text-align: center;
 }
+
 td a {
     color: white;
-    background-color: #0724B2;
+    background-color: #f08484;
     padding-top: 3px;
     padding-right: 15px;
     padding-bottom: 5px;
@@ -44,36 +46,43 @@ td a {
     border-radius: 20px;
     margin-left: 15px;
 }
+
 td a:hover {
     text-decoration: none;
     color: white;
 }
+
 thead {
-    background-color: #0724B2;
+    background-color: #f08484;
     color: white;
 }
+
 table {
     display: block;
     overflow: auto;
 }
-  
+
 tbody {
     display: block;
     max-height: 30vw;
     overflow: auto;
 }
-thead, tbody tr {
+
+thead,
+tbody tr {
     display: table;
     width: 100%;
-    table-layout: fixed; 
+    table-layout: fixed;
 }
+
 tbody::-webkit-scrollbar {
     width: 6px;
-  }
-  
-tbody::-webkit-scrollbar-thumb {
-background: var(--gray);
 }
+
+tbody::-webkit-scrollbar-thumb {
+    background: var(--gray);
+}
+
 .row {
     margin-left: 0;
 }

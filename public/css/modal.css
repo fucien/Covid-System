@@ -1,22 +1,24 @@
-#modal-insert > .modal-dialog{
+#modal-insert>.modal-dialog {
     max-width: none;
     max-height: none;
 }
 
-#modal-update > .modal-dialog{
+#modal-update>.modal-dialog {
     max-width: none;
     max-height: none;
 }
 
-#modal-settings > .modal-dialog{
+#modal-settings>.modal-dialog {
     max-width: none;
     max-height: none;
 }
 
-.modal-dialog{
+.modal-dialog {
     position: absolute;
-    top: 50% !important;;
-    left: 50% !important;;
+    top: 50% !important;
+    ;
+    left: 50% !important;
+    ;
     transform: translate(-50%, -50%) !important;
 }
 
