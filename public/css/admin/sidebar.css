@@ -3778,7 +3778,7 @@ input[type="button"].btn-block {
       color: #fff; }
 
 .card {
-  position: relative;
+  /* position: relative; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
