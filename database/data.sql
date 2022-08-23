@@ -89,7 +89,7 @@ VALUES(CURRENT_DATE,0,0,0,0,0,0,0);
 ---Insert table NoiDieuTriCachLy
 ALTER SEQUENCE IF EXISTS "NoiDieuTriCachLy_MaNoiDTCL_seq" RESTART WITH 1;
 INSERT INTO "NoiDieuTriCachLy"("TenNoiDTCL","SucChua","SoLuongHienTai","DiaChi","Loai")
-VALUES('Trạm điều trị 1',30,0,'980 Quang Trung, Phường 12 , Quận Gò Vấp, Hồ Chí Minh',1);
+VALUES('Trạm điều trị 1',30,0,'980 Quang Trung, Phường 12, Quận Gò Vấp, Hồ Chí Minh',1);
 INSERT INTO "NoiDieuTriCachLy"("TenNoiDTCL","SucChua","SoLuongHienTai","DiaChi","Loai")
 VALUES('Trạm điều trị 2',100,0,'23 Tây Lộ, Tân Đức, Đầm Dơi, Cà Mau',1);
 INSERT INTO "NoiDieuTriCachLy"("TenNoiDTCL","SucChua","SoLuongHienTai","DiaChi","Loai")
