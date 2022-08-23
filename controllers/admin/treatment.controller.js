@@ -95,7 +95,7 @@ treatmentRouter.post("/detail", async (req, res) => {
 treatmentRouter.get('/create', (req, res) => {
   return res.render('admin/treatment/create', {
       layout: 'adminSidebar',
-      title: 'Thêm mới điểm điều trị, cách ly',
+      title: 'Thêm cơ sở điều trị, cách ly mới',
       path: 'createTreatment'
   });
 })
@@ -118,9 +118,9 @@ treatmentRouter.post("/create", upload.single('file'), async (req, res) => {
         }    
       return res.render('admin/treatment/create', {
         layout: 'adminSidebar',
-        title: 'Thêm mới điểm điều trị, cách ly',
+        title: 'Thêm cơ sở điều trị, cách ly',
         path: 'createTreatment',
-        msg: 'Thêm điểm điều trị, cách ly thành công!',
+        msg: 'Thêm cơ sở điều trị, cách ly thành công!',
         status: 1
       });
     }
@@ -138,7 +138,7 @@ treatmentRouter.post("/create", upload.single('file'), async (req, res) => {
     if(result) {
       return res.render('admin/treatment/create', {
         layout: 'adminSidebar',
-        title: 'Thêm mới điểm điều trị, cách ly',
+        title: 'Thêm cơ sở điều trị, cách ly',
         path: 'createTreatment',
         msg: 'Thêm điểm điều trị, cách ly thành công!',
         status: 1
@@ -146,7 +146,7 @@ treatmentRouter.post("/create", upload.single('file'), async (req, res) => {
     } else {
       return res.render('admin/treatment/create', {
         layout: 'adminSidebar',
-        title: 'Thêm mới điểm điều trị, cách ly',
+        title: 'Thêm cơ sở điều trị, cách ly',
         path: 'createTreatment',
         msg: 'Thêm mới không thành công!'
       });
@@ -154,7 +154,7 @@ treatmentRouter.post("/create", upload.single('file'), async (req, res) => {
   } catch (error) {
     return res.render('admin/treatment/create', {
       layout: 'adminSidebar',
-      title: 'Thêm mới điểm điều trị, cách ly',
+      title: 'Thêm cơ sở điều trị, cách ly',
       path: 'createTreatment',
       msg: 'Thêm mới không thành công!'
    });
