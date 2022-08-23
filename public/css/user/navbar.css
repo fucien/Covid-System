@@ -16,14 +16,8 @@ body {
     margin: auto;
 }
 
-#logo {
-    font-size: 35px;
-    font-weight: bold;
-    padding-left: 30px;
-}
-
-#logo:hover {
-    text-decoration: none;
+img {
+    margin: auto;
 }
 
 #menu {
@@ -34,7 +28,6 @@ body {
 }
 
 .menu-item {
-    
     margin-left: 100px;
     color: white;
     text-decoration: none;
