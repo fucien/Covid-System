@@ -6,8 +6,8 @@ body::-webkit-scrollbar-thumb {
   background: var(--gray);
 }
 
-#sidebar {
-  background-color: #494CA2;
+ #sidebar {
+  background-color: #f08484;
 }
 
 .nav-item {

@@ -21,7 +21,7 @@ managerRouter.get('/list', async(req, res) => {
     return res.render('admin/managerList', {
         managers: result,
         layout: 'adminSidebar',
-        title: 'Danh sách người quản lý',
+        title: 'Danh sách Admin',
         path: 'manager'
     })
 })
@@ -30,7 +30,7 @@ managerRouter.get('/list', async(req, res) => {
 managerRouter.get('/create', (req, res) => {
     return res.render('admin/managerCreate', {
         layout: 'adminSidebar',
-        title: 'Tạo tài khoản người quản lý',
+        title: 'Tạo tài khoản Admin',
         path: 'create'
     });
 })
@@ -53,7 +53,7 @@ managerRouter.post('/create',upload.single('file'), async(req, res) => {
              }          
             return res.render('admin/managerCreate', {
                 layout: 'adminSidebar',
-                title: 'Tạo tài khoản người quản lý',
+                title: 'Tạo tài khoản Admin',
                 path: 'create',
                 msg: 'Tạo tài khoản thành công',
                 status: 1
@@ -69,7 +69,7 @@ managerRouter.post('/create',upload.single('file'), async(req, res) => {
         if(result) {
             return res.render('admin/managerCreate', {
                 layout: 'adminSidebar',
-                title: 'Tạo tài khoản người quản lý',
+                title: 'Tạo tài khoản Admin',
                 path: 'create',
                 msg: 'Tạo tài khoản thành công',
                 status: 1
@@ -77,7 +77,7 @@ managerRouter.post('/create',upload.single('file'), async(req, res) => {
         } else {
             return res.render('admin/managerCreate', {
                 layout: 'adminSidebar',
-                title: 'Tạo tài khoản người quản lý',
+                title: 'Tạo tài khoản Admin',
                 path: 'create',
                 msg: 'Tạo tài khoản không thành công',
             })
@@ -86,7 +86,7 @@ managerRouter.post('/create',upload.single('file'), async(req, res) => {
         console.log(error)
         return res.render('admin/managerCreate', {
             layout: 'adminSidebar',
-            title: 'Tạo tài khoản người quản lý',
+            title: 'Tạo tài khoản Admin',
             path: 'create',
             msg: 'Tạo tài khoản không thành công',
         })
