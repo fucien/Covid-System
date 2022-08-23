@@ -50,7 +50,7 @@
 }
 
 #content::-webkit-scrollbar-thumb {
-background: var(--gray);
+background: #f08484;
 }
 
 tbody::-webkit-scrollbar {
@@ -58,7 +58,7 @@ tbody::-webkit-scrollbar {
 }
 
 tbody::-webkit-scrollbar-thumb {
-background: var(--gray);
+background: #f08484;
 }
 
 
