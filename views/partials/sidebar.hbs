@@ -5,33 +5,33 @@
     <div class="sidebar-sticky w-100">
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a {{#ifStr where 'user' }} class="nav-link active font-weight-bold " {{else}} class="nav-link"
+                <a {{#ifStr where 'user' }} class="nav-link active font-weight-bold " {{else}} class="nav-link" 
                     {{/ifStr}} href="/manager/user/list">
-                    Người liên quan
+                    <p class="fa fa-male mr-3"></p>Người liên quan
                 </a>
             </li>
             <li class="nav-item">
                 <a {{#ifStr where 'product' }} class="nav-link active font-weight-bold " {{else}} class="nav-link"
                     {{/ifStr}} href="/manager/product/list">
-                    Nhu yếu phẩm
+                    <p class="fa-solid fa-capsules mr-3"></p>Nhu yếu phẩm
                 </a>
             </li>
             <li class="nav-item">
                 <a {{#ifStr where 'package' }} class="nav-link active font-weight-bold " {{else}} class="nav-link"
                     {{/ifStr}} href="/manager/package/list">
-                    Gói nhu yếu phẩm
+                    <p class="fa-solid fa-box mr-3"></p>Gói nhu yếu phẩm
                 </a>
             </li>
             <li class="nav-item">
                 <a {{#ifStr where 'statistic' }} class=" nav-link active font-weight-bold " {{else}} class=" nav-link"
                     {{/ifStr}} href="/manager/statistic">
-                    Thống kê
+                    <p class="fa-solid fa-chart-line mr-3"></p>Thống kê
                 </a>
             </li>
             <li class="nav-item">
                 <a {{#ifStr where 'payment' }} class="nav-link active font-weight-bold " {{else}} class="nav-link"
                     {{/ifStr}} href="/manager/payment/list">
-                    Thanh toán, dư nợ
+                    <p class="fa-solid fa-money-bill mr-3"></p>Thanh toán, dư nợ
                 </a>
             </li>
         </ul>
