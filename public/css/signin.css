@@ -1,5 +1,5 @@
 #body {
-    background-color: #f08484;
+    background-image: linear-gradient(to right, #f08484, #a7c991);
 }
 
 #form-container {
@@ -7,7 +7,7 @@
     margin-top: 80px;
     width: 400px;
     border-radius: 20px;
-    box-shadow: 6px 6px 5px #f08484;
+    box-shadow: 15px 20px 0px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
