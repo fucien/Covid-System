@@ -15,24 +15,24 @@
 		<div class="wrapper d-flex align-items-stretch">
 			<nav id="sidebar">
 				<div class="custom-menu mt-5">
-					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+					<button type="button" id="sidebarCollapse" class="btn btn-dark">
                     <i class="fa fa-bars"></i>
                     </button>
                 </div>
                 <div class="p-4">
-                    <img src="https://cdn-icons-png.flaticon.com/512/4193/4193239.png" width="70" height="70" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/4193/4193239.png" width="50" height="50">
                     <ul class="list-unstyled components mb-5">
                         <li id="create">
-                            <a href="/admin/manager/create"><span class="fa fa-paper-plane mr-3"></span>Tạo Admin</a>
+                            <a href="/admin/manager/create"><span class="fa fa-user mr-3"></span>Tạo Manager</a>
                         </li>
                         <li id="manager">
-                            <a href="/admin/manager/list"><span class="fa fa-user mr-3"></span>Admin</a>
+                            <a href="/admin/manager/list"><span class="fa fa-users mr-3"></span>Danh sách Manager</a>
                         </li>
                         <li id="treatment-create">
-                            <a href="/admin/treatment/create"><span class="fa fa-paper-plane mr-3"></span>Thêm cơ sở</a>
+                            <a href="/admin/treatment/create"><span class="fa fa-plus-circle mr-3"></span>Thêm cơ sở</a>
                         </li>
                         <li id="treatment">
-                            <a href="/admin/treatment/list"><span class="fa fa-briefcase mr-3"></span>Cơ sở điều trị, cách ly</a>
+                            <a href="/admin/treatment/list"><span class="fa fa-hospital-o mr-3"></span>Cơ sở điều trị, cách ly</a>
                         </li>
                     </ul>
                     <div class="footer">
@@ -49,7 +49,7 @@
                         <button class="btn btn-success my-2 my-sm-0" type="submit">🔎</button>
                     </form>
                     <div class="col-md-2">
-                        <a id="signout" href="/auth/signout" class="btn btn-success my-2 my-sm-0 ">Đăng xuất</a>
+                        <a id="signout" href="/auth/signout" class="btn btn-success my-2 my-sm-0 nav-link">Đăng xuất</a>
                     </div>
                 </nav>
                 {{{body}}} 

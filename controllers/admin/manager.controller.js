@@ -21,7 +21,7 @@ managerRouter.get('/list', async(req, res) => {
     return res.render('admin/managerList', {
         managers: result,
         layout: 'adminSidebar',
-        title: 'Danh sách Admin',
+        title: 'Danh sách Manager',
         path: 'manager'
     })
 })
@@ -30,7 +30,7 @@ managerRouter.get('/list', async(req, res) => {
 managerRouter.get('/create', (req, res) => {
     return res.render('admin/managerCreate', {
         layout: 'adminSidebar',
-        title: 'Tạo tài khoản Admin',
+        title: 'Tạo tài khoản Manager',
         path: 'create'
     });
 })
