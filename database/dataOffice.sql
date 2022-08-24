@@ -194,7 +194,7 @@ VALUES('Cải thìa baby'
 	   ,'https://cdn.tgdd.vn/Products/Images/8820/233795/bhx/cai-thia-baby-goi-300g-202205210830026492.jpg'
 	   ,'https://cdn.tgdd.vn/Products/Images/8820/233795/bhx/cai-thia-baby-goi-300g-202205210829179401.jpg'
 	   ,'https://cdn.tgdd.vn/Products/Images/8820/233795/bhx/cai-thia-baby-goi-300g-202205210829184244.jpg'
-	   ,145000,'300g');
+	   ,14500,'300g');
 INSERT INTO "NhuYeuPham"("TenNYP","HinhAnh1","HinhAnh2","HinhAnh3","HinhAnh4","DonGia","DonViDinhLuong")
 VALUES('Thịt bò'
 	   ,'https://cdn.tgdd.vn/Products/Images/8139/248985/bhx/dui-bo-nhap-khau-dong-lanh-khay-500g-202203121756406544.jpg'

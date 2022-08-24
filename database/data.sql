@@ -102,19 +102,19 @@ VALUES('Trạm điều trị 3',40,0,'30 Bình Trọng , Sơn Bình, Khánh Sơn
 ---Insert table NguoiLienQuan
 ALTER SEQUENCE IF EXISTS "NguoiLienQuan_MaNguoiLienQuan_seq" RESTART WITH 1;
 INSERT INTO "NguoiLienQuan"("HoTen","CCCD","NgaySinh","DiaChi","SoDienThoai","TrangThaiHienTai","NoiDieuTri")
-VALUES('Nguyễn Thanh Tùng','050600005901','1994-01-10','159, Phan Huy Ích, Phường 12, Quận Gò Vấp, Hồ Chí Minh','0944912963','F1',1);
+VALUES('Nguyễn Thanh Tùng','050600005901','1994-01-10','159 Phan Huy Ích, Phường 12, Quận Gò Vấp, Hồ Chí Minh','0944912963','F1',1);
 INSERT INTO "NguoiLienQuan"("HoTen","CCCD","NgaySinh","DiaChi","SoDienThoai","TrangThaiHienTai","NoiDieuTri")
-VALUES('Phan Tóc Tiên','050600005902','1996-05-01','20, Huỳnh Nghệ, Trần Phán, Đầm Dơi, Cà Mau','037417950','F2',1);
+VALUES('Phan Tóc Tiên','050600005902','1996-05-01','20 Huỳnh Nghệ, Trần Phán, Đầm Dơi, Cà Mau','037417950','F2',1);
 INSERT INTO "NguoiLienQuan"("HoTen","CCCD","NgaySinh","DiaChi","SoDienThoai","TrangThaiHienTai","NoiDieuTri")
-VALUES('Huỳnh Việt Tân','050600005903','2000-12-29','105, Duyệt Nghĩa, Phú Hưng, Cái Nước, Cà Mau','0123984560','F2',1);
+VALUES('Huỳnh Việt Tân','050600005903','2000-12-29','105 Duyệt Nghĩa, Phú Hưng, Cái Nước, Cà Mau','0123984560','F2',1);
 INSERT INTO "NguoiLienQuan"("HoTen","CCCD","NgaySinh","DiaChi","SoDienThoai","TrangThaiHienTai","NoiDieuTri")
-VALUES('Ngô Cao Phát','050600005904','2004-03-16','03, Lê Lợi, Cát Minh, Phù Cát, Bình Định','0268536271','F2',1);
+VALUES('Ngô Cao Phát','050600005904','2004-03-16','03 Lê Lợi, Cát Minh, Phù Cát, Bình Định','0268536271','F2',1);
 INSERT INTO "NguoiLienQuan"("HoTen","CCCD","NgaySinh","DiaChi","SoDienThoai","TrangThaiHienTai","NoiDieuTri")
-VALUES('Nguyễn Chiến Thắng','050600005905','1975-04-30','15, Độc Lập, Phường 7, Tuy Hòa, Phú Yên','0978578351','F3',2);
+VALUES('Nguyễn Chiến Thắng','050600005905','1975-04-30','15 Độc Lập, Phường 7, Tuy Hòa, Phú Yên','0978578351','F3',2);
 INSERT INTO "NguoiLienQuan"("HoTen","CCCD","NgaySinh","DiaChi","SoDienThoai","TrangThaiHienTai","NoiDieuTri")
-VALUES('Lê Việt Hoàng','050600005906','1988-06-24','90, Võ Thị Sáu, Hòa Vinh, Đông Hòa, Phú Yên','0399006771','F3',2);
+VALUES('Lê Việt Hoàng','050600005906','1988-06-24','90 Võ Thị Sáu, Hòa Vinh, Đông Hòa, Phú Yên','0399006771','F3',2);
 INSERT INTO "NguoiLienQuan"("HoTen","CCCD","NgaySinh","DiaChi","SoDienThoai","TrangThaiHienTai","NoiDieuTri")
-VALUES('Cao Văn Lâm','050600005907','2001-01-31','10, Thái Nguyên, Vĩnh Hải, Nha Trang, Khánh Hòa','037343750','F2',1);
+VALUES('Cao Văn Lâm','050600005907','2001-01-31','10 Thái Nguyên, Vĩnh Hải, Nha Trang, Khánh Hòa','037343750','F2',1);
 
 --- Insert table TaiKhoanNguoiDung
 INSERT INTO "TaiKhoanNguoiDung"("NguoiLienQuan","Username","Password","TrangThai")
@@ -147,25 +147,25 @@ VALUES(2,6);
 --- Insert table Nhu Yeu Pham
 ALTER SEQUENCE IF EXISTS "NhuYeuPham_MaNYP_seq" RESTART WITH 1;
 INSERT INTO "NhuYeuPham"("TenNYP","HinhAnh1","HinhAnh2","HinhAnh3","HinhAnh4","DonGia","DonViDinhLuong")
-VALUES('Cà chua',NULL,NULL,NULL,NULL,15000,'kg');
+VALUES('Bánh quy sữa Cosy',NULL,NULL,NULL,NULL,16000,'Gói');
 INSERT INTO "NhuYeuPham"("TenNYP","HinhAnh1","HinhAnh2","HinhAnh3","HinhAnh4","DonGia","DonViDinhLuong")
-VALUES('Rau bắp cải',NULL,NULL,NULL,NULL,12000,'kg');
+VALUES('Snack',NULL,NULL,NULL,NULL,11000,'Gói');
 INSERT INTO "NhuYeuPham"("TenNYP","HinhAnh1","HinhAnh2","HinhAnh3","HinhAnh4","DonGia","DonViDinhLuong")
-VALUES('Thịt ba chỉ',NULL,NULL,NULL,NULL,165000,'kg');
+VALUES('Cà chua',NULL,NULL,NULL,NULL,32000,'kg');
 INSERT INTO "NhuYeuPham"("TenNYP","HinhAnh1","HinhAnh2","HinhAnh3","HinhAnh4","DonGia","DonViDinhLuong")
-VALUES('Thịt gà ',NULL,NULL,NULL,NULL,125000,'kg');
+VALUES('Cải thìa baby ',NULL,NULL,NULL,NULL,14500,'300g');
 INSERT INTO "NhuYeuPham"("TenNYP","HinhAnh1","HinhAnh2","HinhAnh3","HinhAnh4","DonGia","DonViDinhLuong")
-VALUES('Cá Diêu Hồng',NULL,NULL,NULL,NULL,80000,'kg');
+VALUES('Thịt bò',NULL,NULL,NULL,NULL,125000,'500g');
 INSERT INTO "NhuYeuPham"("TenNYP","HinhAnh1","HinhAnh2","HinhAnh3","HinhAnh4","DonGia","DonViDinhLuong")
-VALUES('Ớt Đà Lạt',NULL,NULL,NULL,NULL,35000,'kg');
+VALUES('Thịt heo',NULL,NULL,NULL,NULL,72000,'500g');
 INSERT INTO "NhuYeuPham"("TenNYP","HinhAnh1","HinhAnh2","HinhAnh3","HinhAnh4","DonGia","DonViDinhLuong")
-VALUES('Dầu Ăn Trường An 1,5 lit',NULL,NULL,NULL,NULL,55000,'chai');
+VALUES('Tôm',NULL,NULL,NULL,NULL,55000,'250g');
 INSERT INTO "NhuYeuPham"("TenNYP","HinhAnh1","HinhAnh2","HinhAnh3","HinhAnh4","DonGia","DonViDinhLuong")
-VALUES('Đậu Phộng',NULL,NULL,NULL,NULL,25000,'kg');
+VALUES('Cá hồi',NULL,NULL,NULL,NULL,125000,'300g');
 INSERT INTO "NhuYeuPham"("TenNYP","HinhAnh1","HinhAnh2","HinhAnh3","HinhAnh4","DonGia","DonViDinhLuong")
-VALUES('Gạo Tốt',NULL,NULL,NULL,NULL,16000,'kg');
+VALUES('Tổ yến chưng sẵn',NULL,NULL,NULL,NULL,35000,'Hũ');
 INSERT INTO "NhuYeuPham"("TenNYP","HinhAnh1","HinhAnh2","HinhAnh3","HinhAnh4","DonGia","DonViDinhLuong")
-VALUES('Nước Mắm Nam Ngư 1,5 lit',NULL,NULL,NULL,NULL,60000,'chai');
+VALUES('Nước suối',NULL,NULL,NULL,NULL,4000,'chai');
 
 ---- Insert table GoiNhuYeuPham
 ALTER SEQUENCE IF EXISTS "GoiNhuYeuPham_MaGoiNYP_seq" RESTART WITH 1;
@@ -174,13 +174,13 @@ VALUES('Gói đồ dùng thiết yếu',NOW(),2,7);
 INSERT INTO "GoiNhuYeuPham"("TenGoiNYP","NgayLapGoi","MucGioiHan","ThoiGianGioiHan")
 VALUES('Gói đồ ăn giàu dinh dưỡng',NOW(),2,7);
 INSERT INTO "GoiNhuYeuPham"("TenGoiNYP","NgayLapGoi","MucGioiHan","ThoiGianGioiHan")
-VALUES('Gói gia vị cần thiết',NOW(),2,7);
+VALUES('Gói ăn vặt',NOW(),2,7);
 INSERT INTO "GoiNhuYeuPham"("TenGoiNYP","NgayLapGoi","MucGioiHan","ThoiGianGioiHan")
 VALUES('Gói thực phẩm giàu đạm',NOW(),2,7);
 INSERT INTO "GoiNhuYeuPham"("TenGoiNYP","NgayLapGoi","MucGioiHan","ThoiGianGioiHan")
-VALUES('Gói rau củ quả giàu vitamin c',NOW(),2,7);
+VALUES('Gói vitamin',NOW(),2,7);
 INSERT INTO "GoiNhuYeuPham"("TenGoiNYP","NgayLapGoi","MucGioiHan","ThoiGianGioiHan")
-VALUES('Gói nước uống có gas',NOW(),2,7);
+VALUES('Gói nước uống',NOW(),2,7);
 
 --- Insert table ChiTietGoiNYP
 ALTER SEQUENCE IF EXISTS "ChiTietGoiNYP_MaChiTietGoiNYP_seq" RESTART WITH 1;
