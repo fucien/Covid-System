@@ -171,138 +171,138 @@ VALUES(2,7);
 --- Insert table Nhu Yeu Pham
 ALTER SEQUENCE IF EXISTS "NhuYeuPham_MaNYP_seq" RESTART WITH 1;
 INSERT INTO "NhuYeuPham"("TenNYP","HinhAnh1","HinhAnh2","HinhAnh3","HinhAnh4","DonGia","DonViDinhLuong")
-VALUES('Nho Tươi','https://res.cloudinary.com/dezhxrnon/image/upload/v1642659416/Images/qua/grapesRed_fcleag.jpg'
-,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659416/Images/qua/tim-hieu-ve-qua-thanh-long-gia-tri-dinh-duong-cong-dung-va-ung-dung-min_qknqsf.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659416/Images/qua/mua-dong-co-qua-gi-12_xqxwrr.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659416/Images/qua/meo-don-gian-chon-hoa-qua-tuoi-ngon-an-toan-tuyet-doi_rlzzt4.jpg',15000,'kg');
+VALUES('Bánh quy sữa Cosy','https://cdn.tgdd.vn/Products/Images/3357/197129/bhx/banh-quy-sua-cosy-marie-goi-144g-201908211313355670.JPG'
+,'https://cdn.tgdd.vn/Products/Images/3357/197129/bhx/banh-quy-sua-cosy-marie-goi-144g-201908211313357691.JPG'
+	   ,'https://cdn.tgdd.vn/Products/Images/3357/197129/bhx/banh-quy-sua-cosy-marie-goi-144g-201908211313359872.JPG'
+	   ,'https://cdn.tgdd.vn/Products/Images/3357/197129/bhx/banh-quy-sua-cosy-marie-goi-144g-201908211313428356.JPG',16000,'Gói');
 INSERT INTO "NhuYeuPham"("TenNYP","HinhAnh1","HinhAnh2","HinhAnh3","HinhAnh4","DonGia","DonViDinhLuong")
-VALUES('Rau bắp cải'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659417/Images/Rau/images_1_pozdty.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659417/Images/Rau/images_i5vivk.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659417/Images/Rau/download_ydq8px.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659417/Images/Rau/download_1_l6ouh3.jpg',12000,'kg');
+VALUES('Snack'
+	   ,'https://cdn.tgdd.vn/Products/Images/3364/193606/bhx/snack-khoai-tay-vi-tu-nhien-poca-goi-52g-201911061622165483.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/3364/193606/bhx/snack-khoai-tay-vi-tu-nhien-poca-goi-52g-201911061622167693.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/3364/193606/bhx/snack-khoai-tay-vi-tu-nhien-poca-goi-52g-201911061622169693.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/3364/193606/bhx/snack-khoai-tay-vi-tu-nhien-poca-goi-52g-201911061622174353.jpg',11000,'Gói');
 INSERT INTO "NhuYeuPham"("TenNYP","HinhAnh1","HinhAnh2","HinhAnh3","HinhAnh4","DonGia","DonViDinhLuong")
-VALUES('Thịt ba chỉ'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659418/Images/thit/thit-heo-shutterstock_mkbo_ytrrah.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659418/Images/thit/images_hwwafd.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659417/Images/thit/3-1p60g42555v7-1575707575-1794-1575707805_fk1buf.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659417/Images/thit/143638-1_xs8ce6.jpg'
-	   ,165000,'kg');
+VALUES('Cà chua'
+	   ,'https://cdn.tgdd.vn/Products/Images/8785/271472/bhx/ca-chua-tui-1kg-10-12-trai-202205201607596179.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/8785/271472/bhx/ca-chua-tui-1kg-10-12-trai-202205201607599163.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/8785/271472/bhx/ca-chua-tui-1kg-10-12-trai-202205201608239644.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/8785/271472/bhx/ca-chua-tui-1kg-10-12-trai-202205201608004352.jpg'
+	   ,32000,'kg');
 INSERT INTO "NhuYeuPham"("TenNYP","HinhAnh1","HinhAnh2","HinhAnh3","HinhAnh4","DonGia","DonViDinhLuong")
-VALUES('Thịt gà '
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659418/Images/thit%20ga/thi%CC%A3t-ga%CC%80-4_opuvnh.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659418/Images/thit%20ga/thit-ga-co-tanh-khong-3_abql6k.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659418/Images/thit%20ga/download_gbghiu.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659418/Images/thit%20ga/cach-bao-quan-thit-ga-tuoi_f1vfif.jpg'
-	   ,125000,'kg');
+VALUES('Cải thìa baby'
+	   ,'https://cdn.tgdd.vn/Products/Images/8820/233795/bhx/cai-thia-baby-goi-300g-202205210829175713.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/8820/233795/bhx/cai-thia-baby-goi-300g-202205210830026492.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/8820/233795/bhx/cai-thia-baby-goi-300g-202205210829179401.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/8820/233795/bhx/cai-thia-baby-goi-300g-202205210829184244.jpg'
+	   ,145000,'300g');
 INSERT INTO "NhuYeuPham"("TenNYP","HinhAnh1","HinhAnh2","HinhAnh3","HinhAnh4","DonGia","DonViDinhLuong")
-VALUES('Cá Diêu Hồng'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659405/Images/ca/c%C3%A1-h%E1%BB%93i-1_qktmte.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659404/Images/ca/download_cbnx76.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659404/Images/ca/bao-quan-thuc-pham1_amp3ge.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659404/Images/ca/20200410_012222_412327_ca.max-800x800_nak8z4.jpg'
-	   ,80000,'kg');
+VALUES('Thịt bò'
+	   ,'https://cdn.tgdd.vn/Products/Images/8139/248985/bhx/dui-bo-nhap-khau-dong-lanh-khay-500g-202203121756406544.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/8139/248985/bhx/dui-bo-nhap-khau-dong-lanh-khay-500g-202205181347207997.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/8139/248985/bhx/dui-bo-nhap-khau-dong-lanh-khay-500g-202203121756412182.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/8139/248985/bhx/dui-bo-nhap-khau-dong-lanh-khay-500g-202203121756416870.jpg'
+	   ,125000,'500g');
 INSERT INTO "NhuYeuPham"("TenNYP","HinhAnh1","HinhAnh2","HinhAnh3","HinhAnh4","DonGia","DonViDinhLuong")
-VALUES('Cam Tươi'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659416/Images/qua/meo-don-gian-chon-hoa-qua-tuoi-ngon-an-toan-tuyet-doi_rlzzt4.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659416/Images/qua/79-1574784697996929959094-crop-1574784709253915338977_uhhsew.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659416/Images/qua/1996296_ldluh4.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659416/Images/qua/141448_cong_dung1_ogrd_1_dkzvmf.jpg'
-	   ,35000,'kg');
+VALUES('Thịt heo'
+	   ,'https://cdn.tgdd.vn/Products/Images/8781/228332/bhx/suon-cot-let-khay-500g-4-6-mieng-202111262103141169.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/8781/228332/bhx/suon-cot-let-cp-khay-500g-4-6-mieng-202202111526042757.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/8781/228332/bhx/suon-cot-let-khay-500g-4-6-mieng-202111262103146650.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/8781/228332/bhx/suon-cot-let-khay-500g-4-6-mieng-202111262103174128.JPG'
+	   ,72000,'500g');
 INSERT INTO "NhuYeuPham"("TenNYP","HinhAnh1","HinhAnh2","HinhAnh3","HinhAnh4","DonGia","DonViDinhLuong")
-VALUES('Bột nêm 500g'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659414/Images/gia%20vi/hat-nem-knorr-gia-vi-viet-cho-viet-nam-tai-nhat-ban-vietmart-1-2_dkiiya.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659415/Images/gia%20vi/sai-lam-khi-nem-gia-vi-1_y2wyr5.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659414/Images/gia%20vi/20200703_082223_217608_duong-tinh-luyen-la-g.max-800x800_byjeye.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659415/Images/gia%20vi/20200616_025238_746230_duong-co-gay-ra-ben.max-1800x1800_xp97mv.jpg'
-	   ,55000,'Túi');
+VALUES('Tôm'
+	   ,'https://cdn.tgdd.vn/Products/Images/8782/281942/bhx/tom-the-nguyen-con-khay-250g-202205261316012917.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/8782/281942/bhx/tom-the-nguyen-con-khay-250g-202205261316016287.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/8782/281942/bhx/tom-the-nguyen-con-khay-250g-202205261316030332.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/8782/281942/bhx/tom-the-nguyen-con-khay-250g-202205261316032689.jpeg'
+	   ,55000,'250g');
 INSERT INTO "NhuYeuPham"("TenNYP","HinhAnh1","HinhAnh2","HinhAnh3","HinhAnh4","DonGia","DonViDinhLuong")
-VALUES('Đậu Phộng'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659419/Images/cu/cu-san-tui-1kg-202011131738555762_difa17.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659419/Images/cu/cai-cu_to9xcm.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659419/Images/cu/cu-dau-va-loi-ich-suc-khoe2_cenj_qzvgwm.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659419/Images/cu/6d69c9a6835c6685c8e3e5e0fb9b857a_vqtxqh.jpg'
-	   ,25000,'kg');
+VALUES('Cá hồi'
+	   ,'https://cdn.tgdd.vn/Products/Images/8782/274401/bhx/ca-hoi-cat-khuc-khay-300g-202203130710394755.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/8782/274401/bhx/ca-hoi-cat-khuc-khay-300g-202205251522170217.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/8782/274401/bhx/ca-hoi-cat-khuc-khay-300g-202203130710400448.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/8782/274401/bhx/ca-hoi-cat-khuc-khay-300g-202203130710407645.jpg'
+	   ,125000,'300g');
 INSERT INTO "NhuYeuPham"("TenNYP","HinhAnh1","HinhAnh2","HinhAnh3","HinhAnh4","DonGia","DonViDinhLuong")
-VALUES('Nước ngọt'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659414/Images/do%20uong/04963406_large_osjwf0.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659414/Images/do%20uong/e6c52fa2f6852ba26b9cab2e67a01df4_iamtk9.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659414/Images/do%20uong/c82c75844049b0c0dff45f456298988e_wk22iw.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659414/Images/do%20uong/nuoc-ngot-pepsi-thai-lon-330ml_dghvn4.jpg'
-	   ,12000,'chai');
+VALUES('Tổ yến chưng sẵn'
+	   ,'https://cdn.tgdd.vn/Products/Images/4585/266320/bhx/to-yen-chung-san-canxi-winsnest-70ml-202201261017209016.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/4585/266320/bhx/sellingpoint.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/4585/266320/bhx/to-yen-chung-san-canxi-winsnest-70ml-202201261017231672.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/4585/266320/bhx/to-yen-chung-san-canxi-winsnest-70ml-202201261017245835.jpg'
+	   ,35000,'Hũ');
 INSERT INTO "NhuYeuPham"("TenNYP","HinhAnh1","HinhAnh2","HinhAnh3","HinhAnh4","DonGia","DonViDinhLuong")
-VALUES('Hộp tôm tươi 1kg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659415/Images/hai%20san/Untitled-1-1200x676-33_vxsaof.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659415/Images/hai%20san/muc-ong-tuoi-1_ncplev.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659415/Images/hai%20san/tom_mnp7at.jpg'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659415/Images/hai%20san/download_ws2c1q.jpg'
-	   ,100000,'hộp');
+VALUES('Nước suối'
+	   ,'https://cdn.tgdd.vn/Products/Images/2563/200189/bhx/6-chai-nuoc-tinh-khiet-th-true-water-350ml-202002222123117408.JPG'
+	   ,'https://cdn.tgdd.vn/Products/Images/2563/200189/bhx/6-chai-nuoc-tinh-khiet-th-true-water-350ml-202202211552013241.jpg'
+	   ,'https://cdn.tgdd.vn/Products/Images/2563/200189/bhx/6-chai-nuoc-tinh-khiet-th-true-water-350ml-202002222123122228.JPG'
+	   ,'https://cdn.tgdd.vn/Products/Images/2563/200189/bhx/6-chai-nuoc-tinh-khiet-th-true-water-350ml-202002222123127218.jpg'
+	   ,4000,'chai');
 
 ---- Insert table GoiNhuYeuPham
 ALTER SEQUENCE IF EXISTS "GoiNhuYeuPham_MaGoiNYP_seq" RESTART WITH 1;
 INSERT INTO "GoiNhuYeuPham"("TenGoiNYP","HinhAnh","NgayLapGoi","MucGioiHan","ThoiGianGioiHan")
 VALUES('Gói đồ dùng thiết yếu'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659418/Images/thit/images_hwwafd.jpg'
-	   ,NOW(),3,2);
+	   ,'https://cdn.tgdd.vn/Products/Images/2289/247430/bhx/combo-5-mon-do-dung-thiet-yeu-mua-dich-thuan-phat-202107272215350019.jpg'
+	   ,NOW(),3,20);
 INSERT INTO "GoiNhuYeuPham"("TenGoiNYP","HinhAnh","NgayLapGoi","MucGioiHan","ThoiGianGioiHan")
 VALUES('Gói đồ ăn giàu dinh dưỡng'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659418/Images/thit%20ga/cach-bao-quan-thit-ga-tuoi_f1vfif.jpg'
-	   ,NOW(),4,8);
+	   ,'https://cdn.tgdd.vn/2021/01/CookProduct/2-1200x676-6.jpg'
+	   ,NOW(),4,12);
 INSERT INTO "GoiNhuYeuPham"("TenGoiNYP","HinhAnh","NgayLapGoi","MucGioiHan","ThoiGianGioiHan")
-VALUES('Gói gia vị cần thiết'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659415/Images/gia%20vi/sai-lam-khi-nem-gia-vi-1_y2wyr5.jpg'
-	   ,NOW(),5,3);
+VALUES('Gói ăn vặt'
+	   ,'https://blogcaodep.com/wp-content/uploads/2022/05/mon-an-vat-khi-xem-phim-03.jpg'
+	   ,NOW(),5,7);
 INSERT INTO "GoiNhuYeuPham"("TenGoiNYP","HinhAnh","NgayLapGoi","MucGioiHan","ThoiGianGioiHan")
 VALUES('Gói thực phẩm giàu đạm'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659404/Images/ca/20200410_012222_412327_ca.max-800x800_nak8z4.jpg'
-	   ,NOW(),6,4);
+	   ,'https://vinmec-prod.s3.amazonaws.com/images/20191003_163731_968597_protein-01.max-1800x1800.jpg'
+	   ,NOW(),6,14);
 INSERT INTO "GoiNhuYeuPham"("TenGoiNYP","HinhAnh","NgayLapGoi","MucGioiHan","ThoiGianGioiHan")
-VALUES('Gói rau củ quả giàu vitamin c'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659417/Images/Rau/rauxanh-1-1617764118234_xeuc7j.jpg'
-	   ,NOW(),7,6);
+VALUES('Gói vitamin'
+	   ,'https://aeonmall-long-bien.com.vn/wp-content/uploads/2021/08/vitamins-fresh-color-fruits-vegetables-concept-59040678.jpg'
+	   ,NOW(),7,3);
 INSERT INTO "GoiNhuYeuPham"("TenGoiNYP","HinhAnh","NgayLapGoi","MucGioiHan","ThoiGianGioiHan")
-VALUES('Gói nước uống có gas'
-	   ,'https://res.cloudinary.com/dezhxrnon/image/upload/v1642659414/Images/do%20uong/c82c75844049b0c0dff45f456298988e_wk22iw.jpg'
-	   ,NOW(),8,5);
+VALUES('Gói nước uống'
+	   ,'https://dayphache.edu.vn/wp-content/uploads/2021/02/cac-loai-do-uong-tot-cho-suc-khoe.jpg'
+	   ,NOW(),8,30);
 
 --- Insert table ChiTietGoiNYP
 ALTER SEQUENCE IF EXISTS "ChiTietGoiNYP_MaChiTietGoiNYP_seq" RESTART WITH 1;
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(1,3,10,20,5);
+VALUES(1,5,2,3,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(1,7,1,2,1);
+VALUES(1,10,3,10,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(1,4,1,2,1);
+VALUES(1,3,1,2,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(2,4,1,3,0);
+VALUES(2,3,3,5,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(2,5,1,5,0);
+VALUES(2,5,2,3,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(2,3,1,4,0);
+VALUES(2,8,1,2,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(3,4,1,3,0);
+VALUES(3,1,3,5,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(3,5,1,5,0);
+VALUES(3,2,2,5,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(3,3,1,4,0);
+VALUES(3,10,2,5,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(4,4,1,3,0);
+VALUES(4,6,1,2,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(4,5,1,5,0);
+VALUES(4,7,1,3,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(4,3,1,4,0);
+VALUES(4,8,1,2,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(5,2,1,2,0);
+VALUES(5,9,3,4,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(5,1,1,2,0);
+VALUES(5,3,2,5,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(5,6,1,2,0);
+VALUES(5,4,1,4,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(6,2,1,2,0);
+VALUES(6,9,2,4,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(6,1,1,2,0);
+VALUES(6,10,3,5,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(6,6,1,2,0);
+VALUES(6,3,1,3,1);
 
 --- Insert table LichSuMuaGoiNYP
 ALTER SEQUENCE IF EXISTS "LichSuMuaGoiNYP_MaLichSuMua_seq" RESTART WITH 1;
