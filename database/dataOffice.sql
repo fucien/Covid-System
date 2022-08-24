@@ -2,21 +2,21 @@
 ALTER SEQUENCE IF EXISTS "Tinh_MaTinh_seq" RESTART WITH 1;
 INSERT INTO "Tinh"("TenTinh")
 VALUES
-('TP Hồ Chí Minh'),('Tỉnh Đồng Nai'),('Tỉnh Bình Dương'),('Tỉnh Bình Phước'),('Tỉnh Tây Ninh');
+('TP Hồ Chí Minh'),('Tỉnh Cà Mau'),('Tỉnh Bình Định'),('Tỉnh Phú Yên'),('Tỉnh Khánh Hòa');
 
 --- Insert table Huyen
 ALTER SEQUENCE IF EXISTS "Huyen_MaHuyen_seq" RESTART WITH 1;
 INSERT INTO "Huyen"("TenHuyen","Tinh")
 VALUES
-('Quận 3',1),('Quận 4',1),('Quận 5',1),('Quận 6',1),('Quận 7',1),
+('Quận 3',1),('Quận 4',1),('Quận 5',1),('Quận 6',1),('Quận Gò Vấp',1),
 
-('Huyện Tân Phú',2),('Huyện Vĩnh Cửu',2),('Huyện Định Quán',2),('Huyện Trảng Bom',2),('Huyện Thống Nhất',2),
+('Huyện Đầm Dơi',2),('Huyện Cái Nước',2),('Huyện Năm Căn',2),('Huyện Ngọc Hiển',2),('Huyện Phú Tân',2),
 
-('Huyện Bàu Bàng',3),('Huyện Dầu Tiếng',3),('Thị xã Bến Cát',3),('Huyện Phú Giáo',3),('Thị xã Tân Uyên',3),
+('Huyện Phù Cát',3),('Thị xã Hoài Nhơn',3),('Huyện Phù Mỹ',3),('Huyện Tây Sơn',3),('Thành phố Quy Nhơn',3),
 
-('Huyện Bù Đốp',4),('Huyện Hớn Quản',4),('Huyện Đồng Phú',4),('Huyện Lộc Ninh',4),('Huyện Bù Đăng',4),
+('Thị xã Đông Hòa',4),('Thị xã Sông Cầu',4),('Thành phố Tuy Hòa',4),('Huyện Tuy An',4),('Huyện Sơn Hòa',4),
 
-('Huyện Tân Biên',5),('Huyện Tân Châu',5),('Huyện Dương Minh Châu',5),('Huyện Châu Thành',5),('Huyện Gò Dầu',5);
+('Thành phố Nha Trang',5),('Thành phố Cam Ranh',5),('Huyện Khánh Vĩnh',5),('Huyện Diên Khánh',5),('Huyện Khánh Sơn',5);
 
 INSERT INTO "Xa"("TenXa","Huyen")
 VALUES
@@ -28,47 +28,47 @@ VALUES
  
 ('Phường 01',4),('Phường 02',4),('Phường 03',4),('Phường 04',4),('Phường 05',4),
 
-('Phường Tân Kiểng',5),('Phường Tân Hưng',5),('Phường Bình Thuận',5),('Phường Tân Quy',5),('Phường Phú Thuận',5),
+('Phường 13',5),('Phường 14',5),('Phường 15',5),('Phường 16',5),('Phường 17',5),
 
-('Xã Núi Tượng',6),('Xã Tà Lài',6),('Xã Phú Lập',6),('Xã Phú Sơn',6),('Xã Phú Thịnh',6),
+('Xã Trần Phán',6),('Xã Tân Đức',6),('Xã Tân Thuận',6),('Xã Tân Duyệt',6),('Xã Tân Tiến',6),
  
- ('Xã Phú Lý',7),('Xã Trị An',7),('Xã Tân An',7),('Xã Vĩnh Tân',7),('Xã Bình Lợi',7),
+ ('Xã Lương Thế Trân',7),('Xã Phú Hưng',7),('Xã Tân Hưng',7),('Xã Hưng Mỹ',7),('Xã Đông Thới',7),
  
-('Xã Thanh Sơn',8),('Xã Phú Tân',8),('Xã Phú Vinh',8),('Xã Phú Lợi',8),('Xã Phú Hòa',8),
+('Xã Hàm Rồng',8),('Xã Hiệp Tùng',8),('Xã Đất Mới',8),('Xã Hàng Vịnh',8),('Xã Tam Giang',8),
  
-('Xã Cây Gáo',9),('Xã Bàu Hàm',9),('Xã Sông Thao',9),('Xã Sông Trầu',9),('Xã Đông Hoà',9),
+('Xã Tân Ân Tây',9),('Xã Viên An Đông',9),('Xã Viên An',9),('Thị Trấn Gạch Gốc',9),('Xã Tân Ân',9),
  
-('Xã Gia Tân 1',10),('Xã Gia Tân 2',10),('Xã Gia Tân 3',10),('Xã Gia Kiệm',10),('Xã Quang Trung',10),
+('Thị trấn Cái Đôi Vàm',10),('Xã Phú Mỹ',10),('Xã Phú Tân',10),('Xã Tân Hải',10),('Xã Việt Thắng',10),
  
-('Xã Trừ Văn Thố',11),('Xã Cây Trường II',11),('Thị trấn Lai Uyên',11),('Xã Tân Hưng',11),('Xã Long Nguyên',11),
+('Xã Cát Minh',11),('Xã Cát Khánh',11),('Xã Cát Tiến',11),('Xã Cát Thắng',11),('Thị trấn Ngô Mây',11),
  
-('Xã Thanh Tuyền',12),('Xã Thanh An',12),('Xã Long Tân',12),('Xã An Lập',12),('Xã Định Hiệp',12),
+('Xã Hoài Phú',12),('Xã Hoài Châu',12),('Phường Bồng Sơn',12),('Phường Tam Quan',12),('Phường Hoài Hảo',12),
  
-('Xã An Điền',13),('Xã An Tây',13),('Phường Thới Hòa',13),('Phường Hòa Lợi',13),('Phường Tân Định',13),
+('Xã Mỹ Hòa',13),('Xã Mỹ Thành',13),('Xã Mỹ Chánh',13),('Thị trấn Phù Mỹ',13),('Thị trấn Bình Dương',13),
  
-('Xã An Linh',14),('Xã Phước Sang',14),('Xã An Thái',14),('Xã An Long',14),('Xã An Bình',14),
+('Xã Tây Thuận',14),('Xã Bình Thuận',14),('Xã Bình Thành',14),('Xã Bình Hòa',14),('Xã Tây Bình',14),
  
-('Phường Vĩnh Tân',15),('Phường Hội Nghĩa',15),('Xã Tân Mỹ',15),('Phường Tân Hiệp',15),('Phường Khánh Bình',15),
+('Phường Quang Trung',15),('Phường Lê Hồng Phong',15),('Phường Trần Hưng Đạo',15),('Phường Nguyễn Văn Cừ',15),('Phường Trần Phú',15),
  
-('Thị trấn Thanh Bình',16),('Xã Hưng Phước',16),('Xã Phước Thiện',16),('Xã Thiện Hưng',16),('Xã Thanh Hòa',16),
+('Thị trấn Hoà Vinh',16),('Thị trấn Hoà Hiệp Trung',16),('Xã Hòa Xuân Tây',16),('Xã Hòa Thành',16),('Xã Hòa Tân Đông',16),
  
-('Xã Thanh An',17),('Xã An Khương',17),('Xã An Phú',17),('Xã Tân Lợi',17),('Xã Tân Hưng',17),
+('Phường Xuân Phú',17),('Phường Xuân Thành',17),('Phường Xuân Yên',17),('Phường Xuân Đài',17),('Xã Xuân Lâm',17),
  
-('Xã Thuận Lợi',18),('Xã Đồng Tâm',18),('Xã Tân Phước',18),('Xã Tân Hưng',18),('Xã Tân Lợi',18),
+('Phường 1',18),('Phường 7',18),('Phường Phú Thạnh',18),('Phường Phú Đông',18),('Phường Phú Lâm',18),
  
-('Xã Lộc Hòa',19),('Xã Lộc An',19),('Xã Lộc Tấn',19),('Xã Lộc Thạnh',19),('Xã Lộc Hiệp',19),
+('Thị trấn Chí Thạnh',19),('Xã An Dân',19),('Xã An Thạch',19),('Xã An Lĩnh',19),('Xã An Hòa',19),
  
-('Xã Đường 10',20),('Xã Đak Nhau',20),('Xã Phú Sơn',20),('Xã Thọ Sơn',20),('Xã Bình Minh',20),
+('Thị trấn Củng Sơn',20),('Xã Cà Lúi',20),('Xã Krông Pa',20),('Xã Eachà Rang',20),('Xã Suối Trai',20),
  
-('Xã Tân Lập',21),('Xã Thạnh Bắc',21),('Xã Tân Bình',21),('Xã Thạnh Bình',21),('Xã Thạnh Tây',21),
+('Phường Vĩnh Hòa',21),('Phường Vĩnh Hải',21),('Phường Vĩnh Phước',21),('Phường Ngọc Hiệp',21),('Phường Vĩnh Thọ',21),
  
-('Xã Tân Hà',22),('Xã Tân Đông',22),('Xã Tân Hội',22),('Xã Tân Hòa',22),('Xã Suối Ngô',22),
+('Phường Cam Nghĩa',22),('Phường Cam Phúc Bắc',22),('Phường Cam Phúc Nam',22),('Phường Cam Lộc',22),('Phường Cam Phú',22),
  
-('Xã Suối Đá',23),('Xã Phan',23),('Xã Phước Ninh',23),('Xã Phước Minh',23),('Xã Bàu Năng',23),
+('Thị trấn Khánh Vĩnh',23),('Xã Khánh Hiệp',23),('Xã Khánh Bình',23),('Xã Sông Cầu',23),('Xã Giang Ly',23),
  
-('Xã Đồng Khởi',24),('Xã Thái Bình',24),('Xã An Cơ',24),('Xã Biên Giới',24),('Xã Hòa Thạnh',24),
+('Xã Diên Lạc',24),('Xã Diên Tân',24),('Xã Diên Hòa',24),('Xã Diên Thạnh',24),('Xã Diên Toàn',24),
  
-('Xã Thạnh Đức',25),('Xã Cẩm Giang',25),('Xã Hiệp Thạnh',25),('Xã Bàu Đồn',25),('Xã Phước Thạnh',25);
+('Thị trấn Tô Hạp',25),('Xã Thành Sơn',25),('Xã Sơn Lâm',25),('Xã Sơn Hiệp',25),('Xã Sơn Bình',25);
  
 ---Insert table TaiKhoanHTTT(HeThongThanhToan)
 -- INSERT INTO "TaiKhoanHTTT"("SoDu")
@@ -124,19 +124,19 @@ VALUES('Trạm điều trị 3',60,0,'210 Hiệp Anh, Tân Lập ,Tân Biên, T�
 ---Insert table NguoiLienQuan
 ALTER SEQUENCE IF EXISTS "NguoiLienQuan_MaNguoiLienQuan_seq" RESTART WITH 1;
 INSERT INTO "NguoiLienQuan"("HoTen","CCCD","NgaySinh","DiaChi","SoDienThoai","TrangThaiHienTai","NoiDieuTri")
-VALUES('Nguyễn Văn A','070200006301','1998-01-01','189,HiepTam,LocHiep,LocNinh,BinhPhuoc','033607960','F1',1);
+VALUES('Nguyễn Thanh Tùng','050600005901','1994-01-10','159, Phan Huy Ích, Phường 12, Quận Gò Vấp, Hồ Chí Minh','0944912963','F1',1);
 INSERT INTO "NguoiLienQuan"("HoTen","CCCD","NgaySinh","DiaChi","SoDienThoai","TrangThaiHienTai","NoiDieuTri")
-VALUES('Lê Thị Bình','070200006302','1998-01-01','100, Tân Bình, Tam Hiệp, Trị An, Bình Dương','037417950','F2',1);
+VALUES('Phan Tóc Tiên','050600005902','1996-05-01','20, Huỳnh Nghệ, Trần Phán, Đầm Dơi, Cà Mau','037417950','F2',1);
 INSERT INTO "NguoiLienQuan"("HoTen","CCCD","NgaySinh","DiaChi","SoDienThoai","TrangThaiHienTai","NoiDieuTri")
-VALUES('Lê Văn Cao','070200006303','1998-01-01','105, Tân Bình 2, Tam Hiệp 2, Trị An 2, Đồng Nai','037447750','F2',1);
+VALUES('Huỳnh Việt Tân','050600005903','2000-12-29','105, Duyệt Nghĩa, Phú Hưng, Cái Nước, Cà Mau','0123984560','F2',1);
 INSERT INTO "NguoiLienQuan"("HoTen","CCCD","NgaySinh","DiaChi","SoDienThoai","TrangThaiHienTai","NoiDieuTri")
-VALUES('Lê Văn Định','070200006304','1998-01-01','105, Tân Bình 2, Tam Hiệp 2, Trị An 2, Đồng Nai','037343750','F2',1);
+VALUES('Ngô Cao Phát','050600005904','2004-03-16','03, Lê Lợi, Cát Minh, Phù Cát, Bình Định','0268536271','F2',1);
 INSERT INTO "NguoiLienQuan"("HoTen","CCCD","NgaySinh","DiaChi","SoDienThoai","TrangThaiHienTai","NoiDieuTri")
-VALUES('Lê Thanh Giang','070200006305','1998-01-01','290, Tam Hoàng, An Phú, Quận 12, Hồ Chí Minh','037343750','F3',2);
+VALUES('Nguyễn Chiến Thắng','050600005905','1975-04-30','15, Độc Lập, Phường 7, Tuy Hòa, Phú Yên','0978578351','F3',2);
 INSERT INTO "NguoiLienQuan"("HoTen","CCCD","NgaySinh","DiaChi","SoDienThoai","TrangThaiHienTai","NoiDieuTri")
-VALUES('Lê Trọng Hoàng','070200006306','1998-01-01','290, Tam Hoàng, An Phú, Quận 12, Hồ Chí Minh','037243750','F3',2);
+VALUES('Lê Việt Hoàng','050600005906','1988-06-24','90, Võ Thị Sáu, Hòa Vinh, Đông Hòa, Phú Yên','0399006771','F3',2);
 INSERT INTO "NguoiLienQuan"("HoTen","CCCD","NgaySinh","DiaChi","SoDienThoai","TrangThaiHienTai","NoiDieuTri")
-VALUES('Lê Hoàng Khánh','070200006307','1998-01-01','105, Tân Bình 2, Tam Hiệp 2, Trị An 2, Đồng Nai','037343750','F2',1);
+VALUES('Cao Văn Lâm','050600005907','2001-01-31','10, Thái Nguyên, Vĩnh Hải, Nha Trang, Khánh Hòa','037343750','F2',1);
 
 --- Insert table TaiKhoanNguoiDung
 INSERT INTO "TaiKhoanNguoiDung"("NguoiLienQuan","Username","Password","TrangThai")
