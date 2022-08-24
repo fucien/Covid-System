@@ -2,24 +2,30 @@
     width: 400px;
     margin: auto;
     margin-top: 30px;
-    background-color: white;
 }
 
 #title-changepw {
-    background-color: #f08484;
-    color: white;
-    height: 35px;
-    font-size: 18px;
+    color: #e74255;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    padding-top: 100px;
 }
 
 form {
+    margin: auto;
+    margin-top: 80px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 15px 20px 0px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .input-group {
@@ -61,5 +67,4 @@ label {
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 25px;
-
 }
