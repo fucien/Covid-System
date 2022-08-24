@@ -1,3 +1,5 @@
+const urlPackage = 'api/package';
+
 
 let package;
 let total = 0;
@@ -32,8 +34,8 @@ window.onload = async () => {
 
     $('#buy').click( async (event) => {
         try {
-            const loan = await $.get('https://covid-management-21-22.herokuapp.com/api/get-loan');
-            const level = await $.get('https://covid-management-21-22.herokuapp.com/api/get-level');
+            const loan = await $.get('/api/get-loan');
+        const level = await $.get('/api/get-level');
             if((total + parseInt(loan.SoDuNo)) <= parseInt(level.HanMuc)) {
                 const today = new Date();
                 const date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();

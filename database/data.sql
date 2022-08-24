@@ -75,17 +75,37 @@ INSERT INTO "TaiKhoanHTTT"("SoDu")
 VALUES(0);
 
 ----Insert table TaiKhoanNguoiQuanLy
--- ALTER SEQUENCE IF EXISTS "TaiKhoanNguoiQuanLy_MaTaiKhoan_seq" RESTART WITH 1;
--- INSERT INTO "TaiKhoanNguoiQuanLy"("Username","Password","TrangThai")
--- VALUES('tkql_01','$2a$10$Rxt8nYhUTDnzEOcp6h5fj.AqyhrmPz0CcucDJZcVtrgKg1vv1QlGK',0);
--- INSERT INTO "TaiKhoanNguoiQuanLy"("Username","Password","TrangThai")
--- VALUES('tkql_02','$2a$10$s97vGFG642vpE.aM7PL88O4WfxU/Ye6442n41jnUeU5SjgaXCMbm2',0);
--- INSERT INTO "TaiKhoanNguoiQuanLy"("Username","Password","TrangThai")
--- VALUES('tkql_03','$2a$10$s97vGFG642vpE.aM7PL88O4WfxU/Ye6442n41jnUeU5SjgaXCMbm2',0);
+ALTER SEQUENCE IF EXISTS "TaiKhoanNguoiQuanLy_MaTaiKhoan_seq" RESTART WITH 1;
+INSERT INTO "TaiKhoanNguoiQuanLy"("Username","Password","TrangThai")
+VALUES('tkql_01','$2a$10$Rxt8nYhUTDnzEOcp6h5fj.AqyhrmPz0CcucDJZcVtrgKg1vv1QlGK',0);
+INSERT INTO "TaiKhoanNguoiQuanLy"("Username","Password","TrangThai")
+VALUES('tkql_02','$2a$10$s97vGFG642vpE.aM7PL88O4WfxU/Ye6442n41jnUeU5SjgaXCMbm2',0);
+INSERT INTO "TaiKhoanNguoiQuanLy"("Username","Password","TrangThai")
+VALUES('tkql_03','$2a$10$s97vGFG642vpE.aM7PL88O4WfxU/Ye6442n41jnUeU5SjgaXCMbm2',0);
 
 ---Insert table SoNguoiTungTrangThai
 INSERT INTO "SoNguoiTungTrangThai"("ThoiGian","F0","F1","F2","F3","KhoiBenh","BinhThuong","TuVong")
-VALUES(CURRENT_DATE,0,0,0,0,0,0,0);
+VALUES(CURRENT_DATE-10,1,2,3,4,0,0,0);
+INSERT INTO "SoNguoiTungTrangThai"("ThoiGian","F0","F1","F2","F3","KhoiBenh","BinhThuong","TuVong")
+VALUES(CURRENT_DATE-9,2,4,6,8,1,1,0);
+INSERT INTO "SoNguoiTungTrangThai"("ThoiGian","F0","F1","F2","F3","KhoiBenh","BinhThuong","TuVong")
+VALUES(CURRENT_DATE-8,2,4,7,9,1,1,0);
+INSERT INTO "SoNguoiTungTrangThai"("ThoiGian","F0","F1","F2","F3","KhoiBenh","BinhThuong","TuVong")
+VALUES(CURRENT_DATE-7,2,4,6,10,2,1,0);
+INSERT INTO "SoNguoiTungTrangThai"("ThoiGian","F0","F1","F2","F3","KhoiBenh","BinhThuong","TuVong")
+VALUES(CURRENT_DATE-6,3,5,7,9,1,1,1);
+INSERT INTO "SoNguoiTungTrangThai"("ThoiGian","F0","F1","F2","F3","KhoiBenh","BinhThuong","TuVong")
+VALUES(CURRENT_DATE-5,5,2,6,7,5,2,1);
+INSERT INTO "SoNguoiTungTrangThai"("ThoiGian","F0","F1","F2","F3","KhoiBenh","BinhThuong","TuVong")
+VALUES(CURRENT_DATE-4,2,3,4,5,7,4,1);
+INSERT INTO "SoNguoiTungTrangThai"("ThoiGian","F0","F1","F2","F3","KhoiBenh","BinhThuong","TuVong")
+VALUES(CURRENT_DATE-3,1,3,4,7,8,5,1);
+INSERT INTO "SoNguoiTungTrangThai"("ThoiGian","F0","F1","F2","F3","KhoiBenh","BinhThuong","TuVong")
+VALUES(CURRENT_DATE-2,0,5,3,8,9,6,2);
+INSERT INTO "SoNguoiTungTrangThai"("ThoiGian","F0","F1","F2","F3","KhoiBenh","BinhThuong","TuVong")
+VALUES(CURRENT_DATE-1,1,3,2,3,10,7,2);
+INSERT INTO "SoNguoiTungTrangThai"("ThoiGian","F0","F1","F2","F3","KhoiBenh","BinhThuong","TuVong")
+VALUES(CURRENT_DATE,2,3,2,4,12,8,2);
 ---Insert table NoiDieuTriCachLy
 ALTER SEQUENCE IF EXISTS "NoiDieuTriCachLy_MaNoiDTCL_seq" RESTART WITH 1;
 INSERT INTO "NoiDieuTriCachLy"("TenNoiDTCL","SucChua","SoLuongHienTai","DiaChi","Loai")
@@ -315,7 +335,6 @@ VALUES(6,1,1);
 INSERT INTO "ChiTietMuaGoiNYP" ("LichSuMua","NhuYeuPham","SoLuong")
 VALUES(6,6,1);
 
-delete from "LichSuThanhToan";
 ---Insert table LichSuThanhToan
 INSERT INTO "LichSuThanhToan"("NguoiLienQuan","ThoiGian","SoTien")
 VALUES(1,NOW(),5000000);
@@ -333,10 +352,36 @@ INSERT INTO "LichSuThanhToan"("NguoiLienQuan","ThoiGian","SoTien")
 VALUES(7,NOW(),1000000);
 
 ---Insert table QuanLyThanhToan
+
+
+INSERT INTO "LichSuThanhToan"("NguoiLienQuan","ThoiGian","SoTien")
+VALUES(1,NOW()-Interval '5 DAY',50000);
+INSERT INTO "LichSuThanhToan"("NguoiLienQuan","ThoiGian","SoTien")
+VALUES(2,NOW()-Interval '4 DAY',30000);
+INSERT INTO "LichSuThanhToan"("NguoiLienQuan","ThoiGian","SoTien")
+VALUES(3,NOW()-Interval '6 DAY',10000);
+INSERT INTO "LichSuThanhToan"("NguoiLienQuan","ThoiGian","SoTien")
+VALUES(4,NOW()-Interval '2 DAY',30000);
+INSERT INTO "LichSuThanhToan"("NguoiLienQuan","ThoiGian","SoTien")
+VALUES(5,NOW()-Interval '7 DAY',80000);
+INSERT INTO "LichSuThanhToan"("NguoiLienQuan","ThoiGian","SoTien")
+VALUES(6,NOW()-Interval '3 DAY',30000);
+INSERT INTO "LichSuThanhToan"("NguoiLienQuan","ThoiGian","SoTien")
+VALUES(7,NOW()-Interval '2 DAY',100000);
+
+-- Insert table QuanLyThanhToan
+
 ALTER SEQUENCE IF EXISTS "QuanLyThanhToan_MaQLTT_seq" RESTART WITH 1;
 INSERT INTO "QuanLyThanhToan"("NguoiCapNhat","ThoiGianCapNhat","HanMuc")
 VALUES(1,NOW(),15000000);
 
+-- Update table LichSuThanhToan
+UPDATE "LichSuThanhToan" set "SoDuNo" = 15000000 where "NguoiLienQuan" % 7 = 1;
+UPDATE "LichSuThanhToan" set "SoDuNo" = 24067000 where "NguoiLienQuan" % 7 = 2;
+UPDATE "LichSuThanhToan" set "SoDuNo" = 15058000 where "NguoiLienQuan" % 7 = 3;
+UPDATE "LichSuThanhToan" set "SoDuNo" = 13060000 where "NguoiLienQuan" % 7 = 4;
+UPDATE "LichSuThanhToan" set "SoDuNo" = 12400000 where "NguoiLienQuan" % 7 = 5;
+UPDATE "LichSuThanhToan" set "SoDuNo" = 17080000 where "NguoiLienQuan" % 7 = 6;
 -- select * from "ChiTietGoiNYP";
 -- select * from "ChiTietMuaGoiNYP";
 -- select * from "GoiNhuYeuPham";
