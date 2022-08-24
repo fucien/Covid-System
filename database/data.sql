@@ -78,10 +78,10 @@ VALUES(0);
 ALTER SEQUENCE IF EXISTS "TaiKhoanNguoiQuanLy_MaTaiKhoan_seq" RESTART WITH 1;
 INSERT INTO "TaiKhoanNguoiQuanLy"("Username","Password","TrangThai")
 VALUES('tkql_01','$2a$10$Rxt8nYhUTDnzEOcp6h5fj.AqyhrmPz0CcucDJZcVtrgKg1vv1QlGK',0);
--- INSERT INTO "TaiKhoanNguoiQuanLy"("Username","Password","TrangThai")
--- VALUES('tkql_02','$2a$10$s97vGFG642vpE.aM7PL88O4WfxU/Ye6442n41jnUeU5SjgaXCMbm2',0);
--- INSERT INTO "TaiKhoanNguoiQuanLy"("Username","Password","TrangThai")
--- VALUES('tkql_03','$2a$10$s97vGFG642vpE.aM7PL88O4WfxU/Ye6442n41jnUeU5SjgaXCMbm2',0);
+INSERT INTO "TaiKhoanNguoiQuanLy"("Username","Password","TrangThai")
+VALUES('tkql_02','$2a$10$s97vGFG642vpE.aM7PL88O4WfxU/Ye6442n41jnUeU5SjgaXCMbm2',0);
+INSERT INTO "TaiKhoanNguoiQuanLy"("Username","Password","TrangThai")
+VALUES('tkql_03','$2a$10$s97vGFG642vpE.aM7PL88O4WfxU/Ye6442n41jnUeU5SjgaXCMbm2',0);
 
 ---Insert table SoNguoiTungTrangThai
 INSERT INTO "SoNguoiTungTrangThai"("ThoiGian","F0","F1","F2","F3","KhoiBenh","BinhThuong","TuVong")
