@@ -1,11 +1,12 @@
-#body  {
+#body {
     width: 800px;
     margin: auto;
     margin-top: 20px;
-    
+
 }
+
 #btn-back {
-    background-color: #0724B2;
+    background-color: #f08484;
     color: white;
     padding-left: 10px;
     padding-right: 15px;
@@ -15,16 +16,19 @@
     display: inline;
     margin-left: 20px;
 }
+
 #btn-back:hover {
     text-decoration: none;
 }
+
 #content {
     background-color: white;
     margin-top: 20px;
     padding-bottom: 3px;
 }
+
 #title {
-    background-color: #0724B2;
+    background-color: #f08484;
     color: white;
     width: 350px;
     height: 37px;
@@ -32,14 +36,16 @@
     padding-left: 60px;
     padding-top: 3px;
 }
+
 #package-name {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 15px;
 }
+
 #package-name div {
-    background-color: #0724B2;
+    background-color: #f08484;
     height: 35px;
     color: white;
     font-weight: bold;
@@ -49,9 +55,11 @@
     padding-top: 2px;
     border-radius: 20px;
 }
+
 #total {
     font-weight: bold;
 }
+
 #package-content {
     display: flex;
     flex-direction: row;
@@ -60,6 +68,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 #detail {
     height: 650px;
     overflow: auto;
@@ -90,23 +99,29 @@
     align-items: center;
     justify-items: center;
 }
+
 .img-set img {
-    width: 90px;
-    height: 90px;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
+
 .name-price {
     margin-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+
 .name {
-    
+
     font-size: 19px;
     font-weight: bold;
 }
+
 .price {
-    color: #0724B2;
+    color: #f08484;
 }
 
 .level {
@@ -115,6 +130,7 @@
     flex-direction: column;
     justify-content: space-around;
 }
+
 .padding-tb {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -129,13 +145,15 @@
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 .alter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .btn-change {
-    background-color: #0724B2;
+    background-color: #f08484;
     color: white;
     font-size: 20px;
     width: 30px;
@@ -146,6 +164,7 @@
     margin-right: 10px;
     cursor: pointer;
 }
+
 #buy {
     display: flex;
     justify-content: center;
@@ -153,11 +172,13 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 #buy:hover {
     text-decoration: none;
 }
+
 #buy div {
-    background-color: #0724B2;
+    background-color: #f08484;
     height: 35px;
     color: white;
     font-weight: bold;

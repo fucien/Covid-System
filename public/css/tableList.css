@@ -18,9 +18,10 @@
   display: none;
 }
 
-#table-main th{
-  text-align: center!important;
+#table-main th {
+  text-align: center !important;
 }
-#table-main td{
-  text-align: center!important;
+
+#table-main td {
+  text-align: center !important;
 }

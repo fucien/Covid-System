@@ -4,9 +4,10 @@
     margin-top: 30px;
     background-color: white;
 }
+
 #title-changepw {
-    background-color: #0724B2;
-    color:white;
+    background-color: #f08484;
+    color: white;
     height: 35px;
     font-size: 18px;
     display: flex;
@@ -14,23 +15,27 @@
     align-items: center;
     margin-bottom: 20px;
 }
+
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .input-group {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 15px;
 }
+
 input {
     width: 250px;
     border-radius: 20px;
     text-indent: 10px;
-    border-style:groove;   
+    border-style: groove;
 }
+
 .input {
     height: 40px;
     border-color: #DBD6D6;
@@ -38,16 +43,19 @@ input {
     font-weight: bold;
     padding-bottom: 8px;
 }
+
 label {
     align-self: flex-start;
     text-indent: 80px;
 }
+
 .submit {
     margin-top: 15px;
     margin-bottom: 25px;
 }
+
 #submit {
-    background-color: #0724B2;
+    background-color: #f08484;
     color: white;
     width: 250px;
     padding-top: 5px;
