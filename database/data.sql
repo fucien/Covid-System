@@ -113,9 +113,9 @@ VALUES('Trạm điều trị 1',30,0,'980 Quang Trung, Phường 12, Quận Gò 
 INSERT INTO "NoiDieuTriCachLy"("TenNoiDTCL","SucChua","SoLuongHienTai","DiaChi","Loai")
 VALUES('Trạm điều trị 2',100,0,'23 Tây Lộ, Tân Đức, Đầm Dơi, Cà Mau',1);
 INSERT INTO "NoiDieuTriCachLy"("TenNoiDTCL","SucChua","SoLuongHienTai","DiaChi","Loai")
-VALUES('Trạm cách ly 1',150,0,'56 Huỳnh Thị Cúc, Tây Bình, Tây Sơn, Bình Định',2);
+VALUES('Trạm cách ly 1',150,0,'56 Huỳnh Thị Cúc, Tây Bình, Tây Sơn, Bình Định',0);
 INSERT INTO "NoiDieuTriCachLy"("TenNoiDTCL","SucChua","SoLuongHienTai","DiaChi","Loai")
-VALUES('Trạm cách ly 2',50,0,'198 Trần Hưng Đạo, Hòa Vinh, Đông Hòa, Phú Yên',2);
+VALUES('Trạm cách ly 2',50,0,'198 Trần Hưng Đạo, Hòa Vinh, Đông Hòa, Phú Yên',0);
 INSERT INTO "NoiDieuTriCachLy"("TenNoiDTCL","SucChua","SoLuongHienTai","DiaChi","Loai")
 VALUES('Trạm điều trị 3',40,0,'30 Bình Trọng , Sơn Bình, Khánh Sơn, Khánh Hòa',1);
 
@@ -264,23 +264,41 @@ VALUES('Gói nước uống'
 --- Insert table ChiTietGoiNYP
 ALTER SEQUENCE IF EXISTS "ChiTietGoiNYP_MaChiTietGoiNYP_seq" RESTART WITH 1;
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(1,9,10,20,5);
+VALUES(1,5,2,3,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(1,7,1,2,1);
+VALUES(1,10,3,10,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(1,10,1,2,1);
+VALUES(1,3,1,2,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(2,4,1,3,0);
+VALUES(2,3,3,5,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(2,5,1,5,0);
+VALUES(2,5,2,3,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(2,3,1,4,0);
+VALUES(2,8,1,2,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(5,2,1,2,0);
+VALUES(3,1,3,5,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(5,1,1,2,0);
+VALUES(3,2,2,5,1);
 INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
-VALUES(5,6,1,2,0);
+VALUES(3,10,2,5,1);
+INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
+VALUES(4,6,1,2,1);
+INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
+VALUES(4,7,1,3,1);
+INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
+VALUES(4,8,1,2,1);
+INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
+VALUES(5,9,3,4,1);
+INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
+VALUES(5,3,2,5,1);
+INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
+VALUES(5,4,1,4,1);
+INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
+VALUES(6,9,2,4,1);
+INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
+VALUES(6,10,3,5,1);
+INSERT INTO "ChiTietGoiNYP"("MaGoiNYP","MaNYP","SoLuong","SoLuongToiDa","SoLuongToiThieu")
+VALUES(6,3,1,3,1);
 
 --- Insert table LichSuMuaGoiNYP
 ALTER SEQUENCE IF EXISTS "LichSuMuaGoiNYP_MaLichSuMua_seq" RESTART WITH 1;
