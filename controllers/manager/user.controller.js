@@ -276,11 +276,11 @@ user.post("/create", async (req, res) => {
     };
 
     const username = req.body.cccd;
-    var password = "";
-    DOBArray = DOB.split("-");
-    for (var x in DOBArray) {
-      password += DOBArray[x];
-    }
+    var password = "123";
+    // DOBArray = DOB.split("-");
+    // for (var x in DOBArray) {
+    //   password += DOBArray[x];
+    // }
     const passwordHashed = await bcrypt.hash(password, saltRound);
 
     const accountInfo = {

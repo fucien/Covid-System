@@ -84,7 +84,7 @@ userRouter.get("/announce-payment", async (req, res) => {
   try {
     if (remind)
       announcement =
-        "Hiện tại dư nợ của bạn đang lớn hơn hạn mức cho phép vùi lòng thanh toán";
+        "Hiện tại dư nợ của bạn đang lớn hơn hạn mức cho phép vui lòng thanh toán";
     else announcement = "Hiện tại không có thông báo nhắc thanh toán nào";
 
     res.render("user/announcePayment", {
