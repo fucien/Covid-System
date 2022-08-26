@@ -77,11 +77,11 @@ VALUES(0);
 ----Insert table TaiKhoanNguoiQuanLy
 ALTER SEQUENCE IF EXISTS "TaiKhoanNguoiQuanLy_MaTaiKhoan_seq" RESTART WITH 1;
 INSERT INTO "TaiKhoanNguoiQuanLy"("Username","Password","TrangThai")
-VALUES('tkql_01','$2a$10$Rxt8nYhUTDnzEOcp6h5fj.AqyhrmPz0CcucDJZcVtrgKg1vv1QlGK',0);
+VALUES('tkql1','$2b$10$XzRfZe.sZhak0UxCKqqaFOpYsPPyRQrdEbWlbenS8OVlvVoRNxOfm',0);
 INSERT INTO "TaiKhoanNguoiQuanLy"("Username","Password","TrangThai")
-VALUES('tkql_02','$2a$10$s97vGFG642vpE.aM7PL88O4WfxU/Ye6442n41jnUeU5SjgaXCMbm2',0);
+VALUES('tkql2','$2b$10$XzRfZe.sZhak0UxCKqqaFOpYsPPyRQrdEbWlbenS8OVlvVoRNxOfm',0);
 INSERT INTO "TaiKhoanNguoiQuanLy"("Username","Password","TrangThai")
-VALUES('tkql_03','$2a$10$s97vGFG642vpE.aM7PL88O4WfxU/Ye6442n41jnUeU5SjgaXCMbm2',0);
+VALUES('tkql3','$2b$10$XzRfZe.sZhak0UxCKqqaFOpYsPPyRQrdEbWlbenS8OVlvVoRNxOfm',0);
 
 ---Insert table SoNguoiTungTrangThai
 INSERT INTO "SoNguoiTungTrangThai"("ThoiGian","F0","F1","F2","F3","KhoiBenh","BinhThuong","TuVong")
@@ -122,35 +122,35 @@ VALUES('Trạm điều trị 3',40,0,'30 Bình Trọng , Sơn Bình, Khánh Sơn
 ---Insert table NguoiLienQuan
 ALTER SEQUENCE IF EXISTS "NguoiLienQuan_MaNguoiLienQuan_seq" RESTART WITH 1;
 INSERT INTO "NguoiLienQuan"("HoTen","CCCD","NgaySinh","DiaChi","SoDienThoai","TrangThaiHienTai","NoiDieuTri")
-VALUES('Nguyễn Thanh Tùng','050600005901','1994-01-10','159 Phan Huy Ích, Phường 12, Quận Gò Vấp, Hồ Chí Minh','0944912963','F1',1);
+VALUES('Nguyễn Thanh Tùng','747410567','1994-01-10','159 Phan Huy Ích, Phường 12, Quận Gò Vấp, Hồ Chí Minh','0944912963','F1',1);
 INSERT INTO "NguoiLienQuan"("HoTen","CCCD","NgaySinh","DiaChi","SoDienThoai","TrangThaiHienTai","NoiDieuTri")
-VALUES('Phan Tóc Tiên','050600005902','1996-05-01','20 Huỳnh Nghệ, Trần Phán, Đầm Dơi, Cà Mau','037417950','F2',1);
+VALUES('Phan Tóc Tiên','407585688','1996-05-01','20 Huỳnh Nghệ, Trần Phán, Đầm Dơi, Cà Mau','037417950','F2',1);
 INSERT INTO "NguoiLienQuan"("HoTen","CCCD","NgaySinh","DiaChi","SoDienThoai","TrangThaiHienTai","NoiDieuTri")
-VALUES('Huỳnh Việt Tân','050600005903','2000-12-29','105 Duyệt Nghĩa, Phú Hưng, Cái Nước, Cà Mau','0123984560','F2',1);
+VALUES('Huỳnh Việt Tân','799089968','2000-12-29','105 Duyệt Nghĩa, Phú Hưng, Cái Nước, Cà Mau','0123984560','F2',1);
 INSERT INTO "NguoiLienQuan"("HoTen","CCCD","NgaySinh","DiaChi","SoDienThoai","TrangThaiHienTai","NoiDieuTri")
-VALUES('Ngô Cao Phát','050600005904','2004-03-16','03 Lê Lợi, Cát Minh, Phù Cát, Bình Định','0268536271','F2',1);
+VALUES('Ngô Cao Phát','521284410','2004-03-16','03 Lê Lợi, Cát Minh, Phù Cát, Bình Định','0268536271','F2',1);
 INSERT INTO "NguoiLienQuan"("HoTen","CCCD","NgaySinh","DiaChi","SoDienThoai","TrangThaiHienTai","NoiDieuTri")
-VALUES('Nguyễn Chiến Thắng','050600005905','1975-04-30','15 Độc Lập, Phường 7, Tuy Hòa, Phú Yên','0978578351','F3',2);
+VALUES('Nguyễn Chiến Thắng','182458536','1975-04-30','15 Độc Lập, Phường 7, Tuy Hòa, Phú Yên','0978578351','F3',2);
 INSERT INTO "NguoiLienQuan"("HoTen","CCCD","NgaySinh","DiaChi","SoDienThoai","TrangThaiHienTai","NoiDieuTri")
-VALUES('Lê Việt Hoàng','050600005906','1988-06-24','90 Võ Thị Sáu, Hòa Vinh, Đông Hòa, Phú Yên','0399006771','F3',2);
+VALUES('Lê Việt Hoàng','837476061','1988-06-24','90 Võ Thị Sáu, Hòa Vinh, Đông Hòa, Phú Yên','0399006771','F3',2);
 INSERT INTO "NguoiLienQuan"("HoTen","CCCD","NgaySinh","DiaChi","SoDienThoai","TrangThaiHienTai","NoiDieuTri")
-VALUES('Cao Văn Lâm','050600005907','2001-01-31','10 Thái Nguyên, Vĩnh Hải, Nha Trang, Khánh Hòa','037343750','F2',1);
+VALUES('Cao Văn Lâm','111958633','2001-01-31','10 Thái Nguyên, Vĩnh Hải, Nha Trang, Khánh Hòa','037343750','F2',1);
 
 --- Insert table TaiKhoanNguoiDung
 INSERT INTO "TaiKhoanNguoiDung"("NguoiLienQuan","Username","Password","TrangThai")
-VALUES(1,'070200006301','$2a$10$4acDvLi8UMqLWYKvhbOTVu./VRgZVynR4OWNCo0FFPuQ37zPeWNTq',0);
+VALUES(1,'747410567','$2b$10$XzRfZe.sZhak0UxCKqqaFOpYsPPyRQrdEbWlbenS8OVlvVoRNxOfm',0);
 INSERT INTO "TaiKhoanNguoiDung"("NguoiLienQuan","Username","Password","TrangThai")
-VALUES(2,'070200006302','$2a$10$8ue3kDSamNdzeeHlyMs/qunP1UPiGKc0GLiHDzMO2FUp2dAZSPVwm',0);
+VALUES(2,'407585688','$2b$10$XzRfZe.sZhak0UxCKqqaFOpYsPPyRQrdEbWlbenS8OVlvVoRNxOfm',0);
 INSERT INTO "TaiKhoanNguoiDung"("NguoiLienQuan","Username","Password","TrangThai")
-VALUES(3,'070200006303','$2a$10$1ew1.MtwXVM3ctzWIOO4f.FH8v/eytP96ste9pWpeiKKSObJ7gg.G',0);
+VALUES(3,'799089968','$2b$10$XzRfZe.sZhak0UxCKqqaFOpYsPPyRQrdEbWlbenS8OVlvVoRNxOfm',0);
 INSERT INTO "TaiKhoanNguoiDung"("NguoiLienQuan","Username","Password","TrangThai")
-VALUES(4,'070200006304','$2a$10$Uhp4dUKPO4Ir9Va/3ztZZeFg8SdVXvYFitd6fDqSFJeVLyz6aNhDe',0);
+VALUES(4,'521284410','$2b$10$XzRfZe.sZhak0UxCKqqaFOpYsPPyRQrdEbWlbenS8OVlvVoRNxOfm',0);
 INSERT INTO "TaiKhoanNguoiDung"("NguoiLienQuan","Username","Password","TrangThai")
-VALUES(5,'070200006305','$2a$10$K7Lo3Kc3v1Om0y4BnSIw1.aP7nsZ.haC/Df3wlK9Z.TYnJ2v8QXve',0);
+VALUES(5,'182458536','$2b$10$XzRfZe.sZhak0UxCKqqaFOpYsPPyRQrdEbWlbenS8OVlvVoRNxOfm',0);
 INSERT INTO "TaiKhoanNguoiDung"("NguoiLienQuan","Username","Password","TrangThai")
-VALUES(6,'070200006306','$2a$10$kz57VvFi/wAabpl8cP55ze1FXSpuj6UD1hwtk0I1Ct5qbkQATs.6u',0);
+VALUES(6,'837476061','$2b$10$XzRfZe.sZhak0UxCKqqaFOpYsPPyRQrdEbWlbenS8OVlvVoRNxOfm',0);
 INSERT INTO "TaiKhoanNguoiDung"("NguoiLienQuan","Username","Password","TrangThai")
-VALUES(7,'070200006307','$2a$10$Pli3Ee3c4lNaCr9VJDq2r.s7CeW9XU7dVksAZMfCnnv6SKlsVUqme',0);
+VALUES(7,'111958633','$2b$10$XzRfZe.sZhak0UxCKqqaFOpYsPPyRQrdEbWlbenS8OVlvVoRNxOfm',0);
 
 ---Inset table MoiLienHe
 INSERT INTO "MoiLienHe"("NguoiLienQuan1","NguoiLienQuan2")

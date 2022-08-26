@@ -108,21 +108,6 @@ const auditMiddleware = async (req, res, next) => {
           return next();
         }
       }
-      // if(req.originalUrl.indexOf('payment') > 0) {
-      //   if(req.method === 'GET') {
-      //     if(req.originalUrl.indexOf('list') > 0 && req.originalUrl.indexOf('list/') < 0 ) {
-      //      const result = await managerModel.addHistory(dataSet(managerId, date, 'Quản lý thanh toán', 'Xem'));
-      //      return next();
-      //     }       
-      //   }
-      //   if(req.method === 'POST') {
-      //     if(req.originalUrl.indexOf('limit') > 0) {
-      //       const result = await managerModel.addHistory(dataSet(managerId, date, `Chi tiết gói nhu yếu phẩm - id = ${req.body.id}`, 'Cập nhật', '', req.body.limit));
-      //       return next();
-      //     }
-      //   }
-      // }
-
     } catch (error) {
       console.log(error);
       return next();
