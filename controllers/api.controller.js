@@ -13,7 +13,7 @@ apiRouter.get('/province', async(req, res) => {
         if (result) {
             return res.status(200).json(result);
         } else {
-            throw 'can not connect database';
+            throw 'cannot connect database';
         }
     } catch (error) {
         return res.status(400).json([]);
@@ -27,7 +27,7 @@ apiRouter.get('/district', async(req, res) => {
         if (result) {
             return res.status(200).json(result);
         } else {
-            throw 'can not connect database';
+            throw 'cannot connect database';
         }
     } catch (error) {
         return res.status(400).json([]);
@@ -41,7 +41,7 @@ apiRouter.get('/ward', async(req, res) => {
         if (result) {
             return res.status(200).json(result);
         } else {
-            throw 'can not connect database';
+            throw 'cannot connect database';
         }
     } catch (error) {
         return res.status(400).json([]);
@@ -86,7 +86,7 @@ apiRouter.get('/treatmentAvailable', async(req, res) => {
             })
             return res.status(200).json(result);
         } else {
-            throw 'can not connect database';
+            throw 'cannot connect database';
         }
     } catch (error) {
         return res.status(400).json([]);
@@ -108,7 +108,7 @@ apiRouter.get('/treatment', async(req, res) => {
             })
             return res.status(200).json(result);
         } else {
-            throw 'can not connect database';
+            throw 'cannot connect database';
         }
     } catch (error) {
         return res.status(400).json([]);
@@ -122,7 +122,7 @@ apiRouter.get('/product', async(req, res) => {
         if (result) {
             return res.status(200).json(result);
         } else {
-            throw 'can not connect database';
+            throw 'cannot connect database';
         }
     } catch (error) {
         return res.status(400).json([]);

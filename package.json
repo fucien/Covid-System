@@ -4,15 +4,8 @@
   "description": "Covid-19 patients management system",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --inspect index.js",
     "start": "concurrently \"node index.js\" \"node ./PaymentSystem/index.js\""
   },
-  "keywords": [
-    "covid",
-    "covid management",
-    "management"
-  ],
   "author": "fucien",
   "license": "ISC",
   "dependencies": {

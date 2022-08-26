@@ -29,9 +29,9 @@ $(document).ready(function() {
         $.ajax({
             type: "POST",
             url: url,
-            data: form, // serializes the form's elements.
+            data: form, 
             success: function(data) {
-                alert(data); // show response from the php script.
+                alert(data); 
             },
             cache: false,
             contentType: false,
@@ -44,20 +44,19 @@ $(document).ready(function() {
 $(document).ready(function() {
     $("#idForm").submit(function(e) {
 
-        e.preventDefault(); // avoid to execute the actual submit of the form.
-
+        e.preventDefault(); 
         var form = $(this);
         var url = "/manager/user/create";
 
         $.ajax({
             type: "POST",
             url: url,
-            data: form.serialize(), // serializes the form's elements.
+            data: form.serialize(), 
             success: function(data) {
                 if (data) {
                     alert("Tạo người liên quan thành công");
                     window.location.reload();
-                } // show response from the php script.
+                } 
                 else {
                     alert("Tạo người liên quan  thất bại")
                 }

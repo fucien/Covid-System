@@ -277,10 +277,6 @@ user.post("/create", async (req, res) => {
 
     const username = req.body.cccd;
     var password = "123";
-    // DOBArray = DOB.split("-");
-    // for (var x in DOBArray) {
-    //   password += DOBArray[x];
-    // }
     const passwordHashed = await bcrypt.hash(password, saltRound);
 
     const accountInfo = {
@@ -345,33 +341,7 @@ user.post("/relation", async(req, res) => {
     }
 });
 
-user.post("/upload", upload.single('file'), async(req, res) => {
-    if (req.file) {
-        const users = req.file.buffer.toLocaleString().split(`\r\n`);
-        users.pop();
-        for (const item of users) {
-            const itemSplit = item.split(',');
-            const entity = {
-                HoTen: itemSplit.shift(),
-                CCCD: itemSplit.shift(),
-                NgaySinh: itemSplit.shift(),
-                SoDienThoai: itemSplit.shift(),
-                TrangThaiHienTai: itemSplit.shift(),
-                NoiDieuTri: itemSplit.shift(),
-                DiaChi: itemSplit.join(', ').replace(/"/g, ''),
-            };
-            const result = await userModel.create(entity);
-        }
-        return res.render('admin/treatment/create', {
-            layout: 'adminSidebar',
-            title: 'Thêm mới người liên quan',
-            path: 'createTreatment',
-            msg: 'Thêm người liên quan thành công!',
-            status: 1
-        });
-    }
 
-});
 
 
 module.exports = user;

@@ -35,65 +35,7 @@ managerRouter.get('/create', (req, res) => {
     });
 })
 
-// done
-managerRouter.post('/create',upload.single('file'), async(req, res) => {
-    try {
-        if(req.file) {
-             const accounts = req.file.buffer.toLocaleString().split(`\r\n`);
-             accounts.pop();
-             for (const item of accounts) {
-                const itemSplit = item.split(',');
-                const Password = await bcrypt.hash(itemSplit[1], saltRounds);
-                const entity = {
-                    Username: itemSplit[0],
-                    Password: Password,
-                    TrangThai: 0
-                }
-                const result = await managerModel.create(entity);
-             }          
-            return res.render('admin/managerCreate', {
-                layout: 'adminSidebar',
-                title: 'Tạo tài khoản Admin',
-                path: 'create',
-                msg: 'Tạo tài khoản thành công',
-                status: 1
-            })
-        }
-        const Password = await bcrypt.hash(req.body.password, saltRounds);
-        const entity = {
-            Username: req.body.username,
-            Password: Password,
-            TrangThai: 0
-        }
-        const result = await managerModel.create(entity);
-        if(result) {
-            return res.render('admin/managerCreate', {
-                layout: 'adminSidebar',
-                title: 'Tạo tài khoản Admin',
-                path: 'create',
-                msg: 'Tạo tài khoản thành công',
-                status: 1
-            })
-        } else {
-            return res.render('admin/managerCreate', {
-                layout: 'adminSidebar',
-                title: 'Tạo tài khoản Admin',
-                path: 'create',
-                msg: 'Tạo tài khoản không thành công',
-            })
-        }
-    } catch (error) {
-        console.log(error)
-        return res.render('admin/managerCreate', {
-            layout: 'adminSidebar',
-            title: 'Tạo tài khoản Admin',
-            path: 'create',
-            msg: 'Tạo tài khoản không thành công',
-        })
-    }
-})
 
-// done
 managerRouter.get('/update', async (req, res) => {
     try {
         const entity = {

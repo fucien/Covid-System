@@ -17,7 +17,7 @@ async function viewMorePackages() {
         for (const package of packages) {
             $('#packages').append(`
                 <div class="package col col-md-3 mx-2 my-2 rounded pt-2">
-                    <img src="${package.HinhAnh || "https://picsum.photos/1400/950"}" alt="Package image" class="w-100">
+                    <img src="${package.HinhAnh || "https://www.vietnamyello.com/img/cats/food-packaging.jpg"}" alt="Package image" class="w-100">
                     <div class="content">
                         <div class="name">${package.TenGoiNYP}</div>
                         <ul>
